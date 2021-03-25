@@ -1,9 +1,20 @@
+
+@import '../../../styles/variables';
+
 .header__container {
+    border: 1px solid red;
     height: 96px;
     padding:0 23px;
     width: 100%;
     display: flex;
     align-items: center;
+
+    @media(min-width: $breakpoint-tablet) {
+        padding: 64px 28px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        padding: 64px 165px ;
+    }
     
 } 
 
@@ -17,7 +28,6 @@
                 height: 27px;
                 width: 202px;
                 object-fit: cover;
-
             }
         }
         &__logomenu {
@@ -26,7 +36,25 @@
             height: 27px;
             img {
                 height: 20px;
-                
             }
-        }    
+        }   
+        &__navigation {
+            display: flex;
+            align-items: center;
+            &--title {
+                color: $brand-secondary-dark-grey;
+                font-size: 14px;
+                line-height: 14px;
+                font-weight: 400;
+            }
+            a {
+                &:hover {
+                        border-bottom: 1px solid $brand-secondary-dark-grey;
+                }
+                &:not(:last-child) {
+                    margin-right: 43px;
+                }
+
+            }
+        } 
 }

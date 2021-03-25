@@ -11,7 +11,12 @@ export default function HeaderContainer() {
                 <a href="/" className="header__logo">
                         <img src={Logo} alt=""/>
                 </a>
-                <div className="header__logomenu">
+                    <nav className="header__navigation hide-on-mobile">
+                        <a href="/company"><h3 className="header__navigation--title">OUR COMPANY</h3></a>
+                        <a href="/company"><h3 className="header__navigation--title">LOCATIONS</h3></a>
+                        <a href="/company"><h3 className="header__navigation--title">CONTACT</h3></a>
+                    </nav>
+                <div className="header__logomenu hide-on-tablet">
                     <img src={LogoMenu} alt=""/>
                 </div>
             </div>
