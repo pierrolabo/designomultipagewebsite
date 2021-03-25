@@ -1,0 +1,32 @@
+.header__container {
+    height: 96px;
+    padding:0 23px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+} 
+
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+        &__logo {
+            display: flex;
+            & img {
+                height: 27px;
+                width: 202px;
+                object-fit: cover;
+
+            }
+        }
+        &__logomenu {
+            display: flex;
+            align-items: center;
+            height: 27px;
+            img {
+                height: 20px;
+                
+            }
+        }    
+}
