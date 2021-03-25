@@ -16,6 +16,10 @@ body {
     line-height: 26px;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-weight: 500;
     font-size: 48px;
@@ -34,4 +38,16 @@ h3 {
     font-size: 20px;
     line-height: 26px;
     letter-spacing: 5px;
+}
+
+.hide-on-tablet {
+    @media(min-width: $breakpoint-tablet) {
+        display: none;
+    }
+}
+
+.hide-on-mobile {
+    @media(max-width: $breakpoint-tablet) {
+        display: none;
+    }
 }
