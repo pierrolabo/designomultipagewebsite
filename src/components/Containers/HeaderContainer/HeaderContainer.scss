@@ -2,7 +2,6 @@
 @import '../../../styles/variables';
 
 .header__container {
-    border: 1px solid red;
     height: 96px;
     padding:0 23px;
     width: 100%;
@@ -34,6 +33,9 @@
             display: flex;
             align-items: center;
             height: 27px;
+            &:hover {
+                cursor: pointer;
+            }
             img {
                 height: 20px;
             }
