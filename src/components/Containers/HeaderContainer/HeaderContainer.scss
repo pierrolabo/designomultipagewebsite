@@ -8,7 +8,8 @@
     display: flex;
     align-items: center;
     @media(min-width: $breakpoint-tablet) {
-        padding: 64px 28px;
+        padding: 64px 39px;
+        justify-content: center;
     }
     @media(min-width: $breakpoint-desktop) {
         padding: 64px 165px ;
@@ -20,6 +21,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
+    @media(min-width: $breakpoint-tablet) {
+        max-width: 689px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        max-width: 1111px;
+    }
         &__logo {
             display: flex;
             & img {

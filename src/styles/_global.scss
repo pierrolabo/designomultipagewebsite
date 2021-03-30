@@ -40,6 +40,18 @@ h3 {
     letter-spacing: 5px;
 }
 
+main {
+    @media(min-width: $breakpoint-tablet) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 39px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        padding: 0 164px
+    }
+}
 .hide-on-tablet {
     @media(min-width: $breakpoint-tablet) {
         display: none;
