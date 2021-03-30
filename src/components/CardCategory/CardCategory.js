@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from "prop-types";
 
+import IconRight from '../../assets/shared/desktop/icon-right-arrow.svg';
+
 import './CardCategory.scss'
 
 export default function CardCategory({title, link}) {
@@ -15,10 +17,12 @@ export default function CardCategory({title, link}) {
 
     return (
         <div className={`cardcategory ${type}`}>
+            <div className="cardcategory__content">
             <h2>{title}</h2>
             <a href={link}>
-            <h4>VIEW PROJECTS</h4>
+            <h4>VIEW PROJECTS<img className="cardcategory--icon" src={IconRight} alt="right icon"/></h4>
         </a>
+                </div>
         </div>
     )
 }
