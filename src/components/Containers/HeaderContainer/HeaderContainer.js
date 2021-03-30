@@ -11,7 +11,7 @@ import LogoMenu from '../../../assets/shared/mobile/icon-hamburger.svg'
 const menuElm = document.getElementById('menu-root');
 
 export default function HeaderContainer() {
-    const [isActive, setActive] = useState(true)
+    const [isActive, setActive] = useState(false)
 
     function HeaderMenu()  {
            return (
