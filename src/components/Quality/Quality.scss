@@ -1,0 +1,24 @@
+.quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 412px;
+    margin-bottom: 80px;
+    &--image {
+        background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
+        background-repeat: no-repeat;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &--title {
+            padding: 48px 0;
+        }
+        &--description {
+            font-style: normal;
+        }
+    }
+}
