@@ -40,6 +40,9 @@ h3 {
     letter-spacing: 5px;
 }
 
+section:not(:first-child) {
+    margin-top: 120px;
+}
 main {
     @media(min-width: $breakpoint-tablet) {
         display: flex;

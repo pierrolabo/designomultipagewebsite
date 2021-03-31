@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.quality {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 412px;
+    margin-bottom: 80px;
+    @media(min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        height: 202px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        flex-direction: column;
+        height: 202px;
+        &:not(:first-child) {
+            margin-left: 30px;
+        }
+    }
+    &--image {
+        background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
+        background-repeat: no-repeat;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        @media(min-width: $breakpoint-tablet) {
+            align-items: flex-start;
+            padding-left: 47px;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            align-items: center;
+            padding-left: 0;
+        }
+        &--title {
+            text-transform: uppercase;
+            @media(min-width: $breakpoint-tablet) {
+                padding: 0 0;
+                padding-bottom: 27px;
+            }
+            @media(min-width: $breakpoint-desktop) {
+                padding: 49px 0;
+            }
+        }
+        &--description {
+            font-style: normal;
+            @media(min-width: $breakpoint-desktop) {
+                width: 350px;
+                text-align: center;
+            }
+        }
+    }
+}
