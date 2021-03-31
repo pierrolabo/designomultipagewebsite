@@ -20,7 +20,7 @@ export default function CardCategory({title, link}) {
             <div className="cardcategory__content">
             <h2>{title}</h2>
             <a href={link}>
-            <h4>VIEW PROJECTS<img className="cardcategory--icon" src={IconRight} alt="right icon"/></h4>
+            <h4>VIEW PROJECTS<img className="cardcategory__content--icon" src={IconRight} alt="right icon"/></h4>
         </a>
                 </div>
         </div>

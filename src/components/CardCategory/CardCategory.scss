@@ -23,6 +23,11 @@
             letter-spacing: 1.4px;
             color: $brand-primary-white;
             margin-bottom: 22px;
+            @media(min-width: $breakpoint-tablet) {
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: 2px;
+            }
         }
         h4 {
             font-weight: 500;
@@ -30,7 +35,7 @@
             line-height: 22px;
             letter-spacing: 5px;
             text-transform: uppercase;
-            color: $brand-primary-white
+            color: $brand-primary-white;
             
         }
         &--icon {
