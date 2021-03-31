@@ -1,5 +1,11 @@
+@import './styles/variables';
+
 .quality__container {
     display: flex;
     flex-direction: column;
     padding: 0 24px;
+    @media(min-width: $breakpoint-tablet) {
+        padding: 0 0;
+    }
+
 }

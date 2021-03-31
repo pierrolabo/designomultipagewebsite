@@ -1,3 +1,5 @@
+@import '../../styles/variables';
+
 .quality {
     display: flex;
     flex-direction: column;
@@ -5,6 +7,10 @@
     align-items: center;
     height: 412px;
     margin-bottom: 80px;
+    @media(min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        height: 202px;
+    }
     &--image {
         background-image: url('../../assets/shared/desktop/bg-pattern-small-circle.svg');
         background-repeat: no-repeat;
@@ -14,8 +20,15 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        @media(min-width: $breakpoint-tablet) {
+            align-items: flex-start;
+            padding-left: 47px;
+        }
         &--title {
-            padding: 48px 0;
+            @media(min-width: $breakpoint-tablet) {
+                padding: 0 0;
+                padding-bottom: 27px;
+            }
         }
         &--description {
             font-style: normal;
