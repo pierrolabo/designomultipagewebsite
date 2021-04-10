@@ -9,6 +9,10 @@
     @media(min-width: $breakpoint-tablet) {
         top: -64%;
     }
+    @media(min-width: $breakpoint-desktop) {
+        top: -54%;
+    }
+    
 }
 
 .cta {
@@ -33,12 +37,28 @@
         background-position: 10% 52%;
 
     }
+    @media(min-width: $breakpoint-desktop) {
+        width: $max-width-desktop;
+        max-width: $max-width-desktop;
+        height: 292px;
+        padding: 74px 96px;
+        background-position: 102% 50%;
+        flex-direction: row;
+        justify-content: space-between;
+
+        background-repeat: no-repeat;
+
+    }
 
     &__details {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        @media(min-width: $breakpoint-desktop) {
+            align-items: flex-start;
+    
+        }
         &--title {
             letter-spacing: 0px;
             font-size: 32px;
@@ -49,6 +69,9 @@
                max-width: 265px;
                font-size: 40px;
                line-height: 40px;
+            }
+            @media(min-width: $breakpoint-desktop) {
+               text-align: left;
             }
         }
         &--text {
@@ -62,19 +85,34 @@
                 font-size: 16px;
                 line-height: 26px;
              }
+             @media(min-width: $breakpoint-desktop) {
+                text-align: left;
+                max-width: 457px;
+             }
         }
     }
-    &__button--button {
-        height: 56px;
-        width: 152px;
-        border: none;
-        border-radius: 8px;
-        color: $brand-secondary-dark-grey;
-        font-size: 15px;
-        line-height: 22px;
-        letter-spacing: 1px;
-        font-weight: 500;
-        text-transform: uppercase;
-        margin-top: 24px;
+    &__button {
+        @media(min-width: $breakpoint-desktop) {
+            height: 100%;
+           display: flex;
+           align-items: center;
+         }
+        &--button {
+            height: 56px;
+            width: 152px;
+            border: none;
+            border-radius: 8px;
+            color: $brand-secondary-dark-grey;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-top: 24px;
+            @media(min-width: $breakpoint-desktop) {
+             margin-top: 0;
+             }
+        }
     }
+    
 }
