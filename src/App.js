@@ -3,6 +3,7 @@ import HeaderContainer from './components/Containers/HeaderContainer/HeaderConta
 import Hero from './components/Hero/Hero';
 import CategoryContainer from './components/Containers/CategoryContainer/CategoryContainer';
 import Quality from './components/Quality/Quality';
+import Footer from './components/Footer/Footer';
 
 import './styles/main.scss';
 import './Home.scss';
@@ -40,6 +41,7 @@ function App() {
        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates, ab corrupti vel laboriosam dolorum. Est ullam natus, aut officiis quam obcaecati numquam eveniet. Enim, odit nihil saepe officia illo molestias, illum doloremque expedita rem neque magnam aperiam voluptate, quam molestiae. Nemo magnam deserunt vel qui sint voluptate mollitia ea.</p>
      </section>
      </main>
+     <Footer/>
     </div>
   );
 }
