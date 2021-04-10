@@ -2,6 +2,8 @@ import React from 'react'
 
 import Logo from '../../assets/shared/desktop/logo-light.png'
 
+import Cta from '../Cta/Cta';
+
 import LogoFacebook from '../../assets/shared/desktop/icon-facebook.svg';
 import LogoInstagram from '../../assets/shared/desktop/icon-instagram.svg';
 import LogoPinterest from '../../assets/shared/desktop/icon-pinterest.svg';
@@ -13,6 +15,7 @@ import './Footer.scss';
 export default function Footer() {
     return (
         <section className="footer">
+            <Cta/>
             <div className="footer__top">
                 <div className="footer__top--logo">
                     <img src={Logo} alt="Company Logo" />

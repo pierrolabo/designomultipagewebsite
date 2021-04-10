@@ -1,0 +1,56 @@
+@import '../../styles/variables';
+
+.cta__container {
+    //border: 1px solid turquoise;
+    position: absolute;
+    width: 100%;
+    top: -23%;
+    z-index: 999;
+   
+}
+
+.cta {
+    height: 379px;
+    padding: 64px 24px;
+    background-image: url('../../assets/shared/desktop/bg-pattern-call-to-action.svg');
+    background-color: $brand-primary-peach;
+    width: $max-width-mobile;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    border-radius: 12px;
+    background-position: 43% 49%;
+
+    &__details {
+        &--title {
+            letter-spacing: 0px;
+            font-size: 32px;
+            line-height: 36px;
+            color: $brand-primary-white;
+            text-align: center;
+        }
+        &--text {
+            color: $brand-primary-white;
+            font-size: 15px;
+            line-height: 25px;
+            text-align: center;
+            margin-top: 13px;
+        }
+    }
+    &__button--button {
+        height: 56px;
+        width: 152px;
+        border: none;
+        border-radius: 8px;
+        color: $brand-secondary-dark-grey;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 24px;
+    }
+}

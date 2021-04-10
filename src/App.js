@@ -36,10 +36,6 @@ function App() {
         strive to give them the best experience a company can provide." 
         image={IllustrationResourceful} />
      </section>
-     <section>
-       <h1>pwet</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates, ab corrupti vel laboriosam dolorum. Est ullam natus, aut officiis quam obcaecati numquam eveniet. Enim, odit nihil saepe officia illo molestias, illum doloremque expedita rem neque magnam aperiam voluptate, quam molestiae. Nemo magnam deserunt vel qui sint voluptate mollitia ea.</p>
-     </section>
      </main>
      <Footer/>
     </div>

@@ -9,6 +9,7 @@
     height: 815px;
     color: $brand-primary-white;
     padding: 0 24px;
+    position: relative;
     @media(min-width: $breakpoint-tablet) {
        height: 423px;
        padding: 0 39px;
