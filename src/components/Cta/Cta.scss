@@ -109,6 +109,11 @@
             font-weight: 500;
             text-transform: uppercase;
             margin-top: 24px;
+            &:hover {
+                cursor: pointer;
+                background-color: $brand-secondary-light-peach;
+                color: $brand-primary-white
+            }
             @media(min-width: $breakpoint-desktop) {
              margin-top: 0;
              }
