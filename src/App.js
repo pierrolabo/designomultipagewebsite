@@ -29,16 +29,12 @@ function App() {
         title="Resourceful" 
         description="Everything that we do has a strategic purpose. We use an agile approach in all of our projects and value customer
         collaboration. It guarantees superior results that fulfill our clients’ needs." 
-        image={IllustrationFriendly} />
+        image={IllustrationResourceful} />
         <Quality 
         title="Friendly" 
         description="We are a group of enthusiastic folks who know how to put people first. Our success depends on our customers, and we
         strive to give them the best experience a company can provide." 
-        image={IllustrationResourceful} />
-     </section>
-     <section>
-       <h1>pwet</h1>
-       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit voluptates, ab corrupti vel laboriosam dolorum. Est ullam natus, aut officiis quam obcaecati numquam eveniet. Enim, odit nihil saepe officia illo molestias, illum doloremque expedita rem neque magnam aperiam voluptate, quam molestiae. Nemo magnam deserunt vel qui sint voluptate mollitia ea.</p>
+        image={IllustrationFriendly} />
      </section>
      </main>
      <Footer/>
