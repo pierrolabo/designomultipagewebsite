@@ -6,7 +6,9 @@
     width: 100%;
     top: -23%;
     z-index: 999;
-   
+    @media(min-width: $breakpoint-tablet) {
+        top: -64%;
+    }
 }
 
 .cta {
@@ -23,14 +25,31 @@
     height: 100%;
     border-radius: 12px;
     background-position: 43% 49%;
+    @media(min-width: $breakpoint-tablet) {
+        width: $max-width-tablet;
+        max-width: $max-width-tablet;
+        height: 350px;
+        padding: 54px 125px;
+        background-position: 10% 52%;
+
+    }
 
     &__details {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
         &--title {
             letter-spacing: 0px;
             font-size: 32px;
             line-height: 36px;
             color: $brand-primary-white;
             text-align: center;
+            @media(min-width: $breakpoint-tablet) {
+               max-width: 265px;
+               font-size: 40px;
+               line-height: 40px;
+            }
         }
         &--text {
             color: $brand-primary-white;
@@ -38,6 +57,11 @@
             line-height: 25px;
             text-align: center;
             margin-top: 13px;
+            @media(min-width: $breakpoint-tablet) {
+                margin-top: 16px;
+                font-size: 16px;
+                line-height: 26px;
+             }
         }
     }
     &__button--button {
