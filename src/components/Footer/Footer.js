@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 import Logo from '../../assets/shared/desktop/logo-light.png'
 
 import Cta from '../Cta/Cta';
@@ -17,13 +17,14 @@ export default function Footer() {
         <section className="footer">
             <Cta/>
             <div className="footer__top">
-                <div className="footer__top--logo">
+                <Link to="/" className="footer__top--logo">
                     <img src={Logo} alt="Company Logo" />
-                </div>
+                </Link>
                 <div className="footer__top__navigation">
-                    <a href="/" target="_blank" rel="noopener noreferrer">OUR COMPANY</a>
-                    <a href="/" target="_blank" rel="noopener noreferrer">LOCATIONS</a>
-                    <a href="/" target="_blank" rel="noopener noreferrer">CONTACT</a>
+                    <Link to="/">OUR COMPANY</Link>
+                    <Link to="locations">LOCATIONS</Link>
+                    <Link to="contact">CONTACT</Link>
+                    
                 </div>
             </div>
             <div className="footer__bottom">
