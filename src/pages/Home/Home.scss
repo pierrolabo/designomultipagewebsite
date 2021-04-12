@@ -1,4 +1,4 @@
-@import './styles/variables';
+@import '../../styles/variables';
 
 .quality__container {
     display: flex;
@@ -24,7 +24,7 @@ main {
             position: absolute;
             top: 15%;
             width: 100%;
-            background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+            background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
             background-repeat: no-repeat;
             z-index: -1;
             background-position: 0% 6%;;
@@ -35,7 +35,7 @@ main {
             position: absolute;
             bottom:  -16%;
             width: 100%;
-            background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+            background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
             background-repeat: no-repeat;
             z-index: -1;
             transform: rotate(180deg);
