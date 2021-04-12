@@ -56,6 +56,8 @@
         &__navigation {
             display: flex;
             flex-direction: column;
+            height: 100%;
+
             @media(min-width: $breakpoint-tablet) {
                 flex-direction: row;
                 width: 100%;
@@ -71,8 +73,13 @@
                 color: $brand-primary-white;
                 margin-top: 30px;
                 text-align: center;
+                &:hover {
+                    border-bottom: 1px solid $brand-secondary-dark-grey;
+                }
                 @media(min-width: $breakpoint-tablet) {
                     margin-top: 0;
+                    height: 16px;
+                    align-items: center;
                 }
             }
         }
@@ -134,6 +141,13 @@
             &--logo:not(:first-child) {
                 margin-left: 16px;
             }
+            &--logo:hover {
+                cursor: pointer;
+                path {
+                    fill: $brand-secondary-light-peach;
+                }
+            }
+           
         }
     }
 }

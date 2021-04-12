@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 import './Cta.scss';
 
@@ -13,7 +14,9 @@ export default function Cta() {
                 </p>
                 </div>
                 <div className="cta__button">
-                    <button type="button" className="cta__button--button">Get in touch</button>
+                    <Link to="/contact">
+                        <button type="button" className="cta__button--button">Get in touch</button>
+                    </Link>
                 </div>
             </section>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 import PropTypes from "prop-types";
 
 import IconRight from '../../assets/shared/desktop/icon-right-arrow.svg';
@@ -17,12 +18,12 @@ export default function CardCategory({title, link}) {
 
     return (
         <div className={`cardcategory ${type}`}>
+            <Link to={link}>
             <div className="cardcategory__content">
             <h2>{title}</h2>
-            <a href={link}>
             <h4>VIEW PROJECTS<img className="cardcategory__content--icon" src={IconRight} alt="right icon"/></h4>
-        </a>
                 </div>
+            </Link>
         </div>
     )
 }
