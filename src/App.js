@@ -27,9 +27,7 @@ function App() {
      <UseScrollToTop/>
      <HeaderContainer/>
        <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
+       
         <Route path="/webdesign">
           <WebDesign />  
         </Route>   
@@ -47,6 +45,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="/">
+          <Home/>
         </Route>
         <Route path="*">
           <NoMatch/>
