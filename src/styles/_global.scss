@@ -44,6 +44,7 @@ section:not(:first-child) {
     margin-top: 120px;
 }
 main {
+    position: relative;
     @media(min-width: $breakpoint-tablet) {
         display: flex;
         flex-direction: column;
@@ -53,6 +54,7 @@ main {
     }
     @media(min-width: $breakpoint-desktop) {
         padding: 0 164px
+       
     }
 }
 .hide-on-tablet {

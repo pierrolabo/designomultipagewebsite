@@ -16,3 +16,32 @@
     }
 
 }
+
+main {
+    @media(min-width: $breakpoint-desktop) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 15%;
+            width: 100%;
+            background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+            background-repeat: no-repeat;
+            z-index: -1;
+            background-position: 0% 6%;;
+            height: 700px;
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            bottom:  -16%;
+            width: 100%;
+            background-image: url('./assets/shared/desktop/bg-pattern-leaf.svg');
+            background-repeat: no-repeat;
+            z-index: -1;
+            transform: rotate(180deg);
+            background-position: -2% 12%;
+            height: 700px;
+        }
+
+    }
+}
