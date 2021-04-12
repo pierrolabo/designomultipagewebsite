@@ -13,6 +13,7 @@ import GraphicDesign from './pages/GraphicDesign/GraphicDesign';
 import Locations from './pages/Locations/Locations';
 import Contact from "./pages/Contact/Contact";
 import About from "./pages/About/About";
+import NoMatch from "./pages/NoMatch/NoMatch";
 
 import HeaderContainer from './components/Containers/HeaderContainer/HeaderContainer';
 import Footer from './components/Footer/Footer';
@@ -46,6 +47,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="*">
+          <NoMatch/>
         </Route>
        </Switch>
      <Footer/>
