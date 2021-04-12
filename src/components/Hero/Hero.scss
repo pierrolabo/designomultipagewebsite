@@ -80,6 +80,9 @@
         }
         &--button {
             position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
             top: 43%;
             width: 152px;
             height: 56px;
@@ -97,12 +100,13 @@
                 background-color: $brand-secondary-light-peach;
                 color: $brand-primary-white
             }
-            @media(min-width: $breakpoint-desktop) {
-               top: 60%;
+            @media(min-width: $breakpoint-tablet) {
+               top: 39%;
             }
             @media(min-width: $breakpoint-desktop) {
-                margin-top: 47px;
-                align-self: flex-start;
+                top: 64%;
+                right: auto;
+                left: 108px;
             }
 
         }
