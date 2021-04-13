@@ -1,0 +1,20 @@
+@import '../../styles/variables';
+
+.webdesign {
+    margin-top: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.webdesign--background {
+    @media(min-width: $breakpoint-tablet) {
+        p {
+            max-width: 390px;
+        }
+    }
+    @media(min-width: $breakpoint-desktop) {
+        background-position: 99% 48% !important;
+    }
+}

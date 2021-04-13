@@ -1,0 +1,15 @@
+@import '../../styles/variables';
+
+.graphicdesign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+.graphicdesign--background {
+    @media(min-width: $breakpoint-desktop) {
+        background-image: url('../../assets/graphic-design/desktop/bg-pattern-intro-graphic.svg');
+        background-position: -24% 49% !important;
+    }
+}

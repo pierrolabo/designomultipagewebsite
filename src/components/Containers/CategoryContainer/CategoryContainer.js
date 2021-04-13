@@ -7,9 +7,9 @@ import './CategoryContainer.scss';
 export default function CategoryContainer() {
     return(
         <section className="categorycontainer">
-            <CardCategory title="WEB DESIGN" link="/webdesign" />
-            <CardCategory title="APP DESIGN" link="/appdesign" />
-            <CardCategory title="GRAPHIC DESIGN" link="/graphicdesign" />
+            <CardCategory title="WEB DESIGN" link="/web-design" />
+            <CardCategory title="APP DESIGN" link="/app-design" />
+            <CardCategory title="GRAPHIC DESIGN" link="/graphic-design" />
         </section>
     )
 

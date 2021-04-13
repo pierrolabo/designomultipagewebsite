@@ -1,9 +1,17 @@
 import React from 'react'
 
+import HeaderDesign from "../../components/HeaderDesign/HeaderDesign";
+
+import "./WebDesign.scss";
+
 export default function WebDesign() {
     return (
         <section className="webdesign">
-            <h1>hola ! estoy el web design page</h1>
+            <HeaderDesign 
+                type="webdesign--background" 
+                title="Web design"
+                text="We build websites that serve as powerful marketing tools and bring memorable brand experiences."
+            />
         </section>
     )
 }

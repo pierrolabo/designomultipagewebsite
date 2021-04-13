@@ -28,13 +28,13 @@ function App() {
      <HeaderContainer/>
        <Switch>
        
-        <Route path="/webdesign">
+        <Route path="/web-design">
           <WebDesign />  
         </Route>   
-        <Route path="/appdesign">
+        <Route path="/app-design">
           <AppDesign/>
         </Route>
-        <Route path="/graphicdesign">
+        <Route path="/graphic-design">
           <GraphicDesign/>
         </Route>
         <Route path="/locations">
