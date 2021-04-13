@@ -1,0 +1,14 @@
+@import '../../styles/variables';
+.appdesign {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+}
+
+.appdesign--background {
+    @media(min-width: $breakpoint-desktop) {
+        background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+        background-position: -25% 48% !important;
+    }
+}
