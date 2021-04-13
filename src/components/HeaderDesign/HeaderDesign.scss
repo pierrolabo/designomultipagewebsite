@@ -1,0 +1,68 @@
+@import '../../styles/variables';
+
+
+
+.headerdesign {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: $brand-primary-peach;
+    background-image: url('../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
+    background-position: 100% 2%;
+    @media(min-width: $breakpoint-tablet) {
+        background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
+        background-repeat: no-repeat;
+        background-position: 12% 47%;
+    }
+    @media(min-width: $breakpoint-tablet) {
+        max-width: $max-width-tablet;
+        min-width: $max-width-tablet;
+        max-height: 252px;
+
+        border-radius: 12px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        min-width: $max-width-desktop;
+        max-width: $max-width-desktop;
+    }
+    &--title {
+        margin-top: 102px;
+
+        font-size: 32px;
+        line-height: 36px;
+        color: $brand-primary-white;
+        @media(min-width: $breakpoint-tablet) {
+            margin-top: 66px;
+            
+            font-size: 48px;
+            line-height: 48px;
+        }
+
+    }
+    &--text {
+        margin-top: 33px;
+        text-align: center;
+        max-width: 327px;
+
+        font-size: 15px;
+        line-height: 25px;
+        color: $brand-primary-white;
+        @media(min-width: $breakpoint-tablet) {
+            max-width: 390px;
+            margin-top: 25px;
+
+            font-size: 16px;
+            line-height: 26px;   
+        }
+    }
+
+}
+
+.webdesign--background {
+   
+    @media(min-width: $breakpoint-desktop) {
+        background-position: 99% 48%;
+    }
+}
