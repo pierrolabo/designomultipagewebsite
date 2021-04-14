@@ -2,6 +2,7 @@ import React from 'react'
 
 import HeaderDesign from "../../components/HeaderDesign/HeaderDesign";
 import ProductCard from "../../components/ProductCard/ProductCard";
+import CardCategory from "../../components/CardCategory/CardCategory";
 
 import ExpressImg from '../../assets/web-design/desktop/image-express.jpg';
 import TransferImg from '../../assets/web-design/desktop/image-transfer.jpg';
@@ -52,6 +53,10 @@ export default function WebDesign() {
                     title="Camp"
                     text="Get expert training in coding, data, design, and digital marketing"
                 />
+            </section>
+            <section className="webdesign__category">
+                <CardCategory title="APP DESIGN" link="/app-design"/>
+                <CardCategory title="GRAPHIC DESIGN" link="graphic-design"/>
             </section>
         </div>
     )
