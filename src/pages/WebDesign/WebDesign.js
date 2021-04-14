@@ -40,11 +40,12 @@ export default function WebDesign() {
                         img={BuilderImg}
                         title="Builder"
                         text="Connects users with local contractors based on their location"
-                    />
+                        />
                 <ProductCard
                     img={BlogrImg}
                     title="Blogr"
                     text="Blogr is a platform for creating an online blog or publication"
+                    style= {{maxWidth: '30ch'}}
                 />
                 <ProductCard
                     img={CampImg}

@@ -15,5 +15,6 @@ export default function HeaderDesign({type, title, text}) {
 HeaderDesign.propTypes = {
     type: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
-    text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired,
 }
+

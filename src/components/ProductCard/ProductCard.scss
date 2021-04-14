@@ -79,6 +79,13 @@
         border-bottom-right-radius: 15px;
         text-align: center;
         height: 100%;
+        &:hover {
+            cursor: pointer;
+            background-color: $brand-primary-peach;
+            h1, p {
+                color: $brand-primary-white;
+            }
+        }
         @media(min-width: $breakpoint-tablet) {
             border-bottom-left-radius: 0px;
                 border-bottom-right-radius: 15px;
