@@ -1,0 +1,226 @@
+@import '../../styles//variables';
+
+.productlist {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(327px, 327px);
+    grid-template-rows: repeat(auto-fit, minmax(478px, 478px));
+    width: $max-width-mobile; 
+    gap: 30px;
+    @media(min-width: $breakpoint-tablet) {
+        grid-template-columns: minmax(689px, 689px);
+        grid-template-rows: repeat(auto-fit, minmax(310px, 310px));
+        width: $max-width-tablet;
+        gap: 30px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+        grid-template-rows: repeat(auto-fill, minmax(478px, 478px));
+        width: $max-width-desktop;
+        row-gap: 30px;
+    }
+    margin-top: 120px;
+}
+
+.productcard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0 !important;
+    @media(min-width: $breakpoint-tablet) {
+        flex-direction: row;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        flex-direction: column;
+    }
+    &__image {
+        max-width: 327px;
+        min-width: 327px;
+        max-height: 320px;
+        min-height: 320px;
+        @media(min-width: $breakpoint-tablet) {
+            max-width: 339px;
+            min-width: 339px;
+            max-height: 310px;
+            min-height: 310px;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            max-width: 350px;
+            min-width: 350px;
+            max-height: 320px;
+            min-height: 320px;
+        }
+        display: flex;
+        img {
+            height: 100%;
+            width: 100%;
+
+            border-top-left-radius: 15px; 
+            border-top-right-radius: 15px; 
+            @media(min-width: $breakpoint-tablet) {
+                border-top-left-radius: 0px; 
+                border-top-right-radius: 0px; 
+                border-top-left-radius: 15px; 
+                border-bottom-left-radius: 15px; 
+            }
+            @media(min-width: $breakpoint-desktop) {
+                border-top-left-radius: 15px; 
+                border-top-right-radius: 15px; 
+                border-bottom-left-radius: 0px; 
+                border-bottom-right-radius: 0px; 
+            }
+        }
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $color-bg-productcard;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        text-align: center;
+        height: 155px;
+        &:hover {
+            cursor: pointer;
+            background-color: $brand-primary-peach;
+            h1, p {
+                color: $brand-primary-white;
+            }
+        }
+        @media(min-width: $breakpoint-tablet) {
+            border-bottom-left-radius: 0px;
+                border-bottom-right-radius: 15px;
+                border-top-right-radius: 15px;
+                height: 100%;
+                width: 100%;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            height: 158px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+        &--title {
+            margin-top: 32px;
+
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 5px;
+            color: $brand-primary-peach;
+            @media(min-width: $breakpoint-tablet) {
+                margin-top: 109px;
+            }
+            @media(min-width: $breakpoint-desktop) {
+                margin-top: 32px;
+                border-top-right-radius: 0px;
+                border-bottom-left-radius: 15px;
+                border-bottom-right-radius: 15px;
+            }
+        }
+        &--text {
+            margin-top: 26px;
+
+            font-size: 16px;
+            line-height: 26px;
+            color: $brand-secondary-dark-grey;
+            max-width: 266px;
+            text-align: center;
+
+            @media(min-width: $breakpoint-tablet) {
+                margin-top: 20px;
+                max-width: 27ch;
+            }
+        }
+    }
+}
+/*
+.productcard {
+    display: flex;
+    flex-direction: column;
+    max-width: 327px;
+    max-height: 478px;
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+    @media(min-width: $breakpoint-tablet) {
+        flex-direction: row;
+        max-width: $max-width-tablet;
+        width: $max-width-tablet;
+        height: 310px;
+        margin-bottom: 30px;
+
+    }
+    @media(min-width: $breakpoint-desktop) {
+        flex-direction: column;
+        max-width: $max-width-tablet;
+        width: $max-width-tablet;
+        height: 310px;
+        margin-bottom: 30px;
+
+    }
+    &__image {
+        max-height: 320px;
+        max-width: 327px;
+        @media(min-width: $breakpoint-tablet) {
+            max-width: 339px;
+            max-height: 310px;
+        }
+        img {
+            border-top-left-radius: 15px; 
+            border-top-right-radius: 15px; 
+            width: 100%;
+            height: 100%;
+            @media(min-width: $breakpoint-tablet) {
+                border-top-left-radius: 0px; 
+                border-top-right-radius: 0px; 
+                border-top-left-radius: 15px; 
+                border-bottom-left-radius: 15px; 
+            }
+    }        
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-height: 158px;
+        height: 158px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: $color-bg-productcard;
+        @media(min-width: $breakpoint-tablet) {
+            max-width: none;
+            max-height: none;
+            height: 100%;
+            width: 100%;
+
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        &--title {
+            margin-top: 32px;
+
+            font-size: 20px;
+            line-height: 26px;
+            letter-spacing: 5px;
+            color: $brand-primary-peach;
+
+            @media(min-width: $breakpoint-tablet) {
+                margin-top: 109px;
+            }
+        }
+        &--text {
+            margin-top: 26px;
+
+            font-size: 16px;
+            line-height: 26px;
+            color: $brand-secondary-dark-grey;
+            max-width: 266px;
+            text-align: center;
+
+            @media(min-width: $breakpoint-tablet) {
+                margin-top: 20px;
+                max-width: 27ch;
+            }
+        }
+    }
+}
+*/
