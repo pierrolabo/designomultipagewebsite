@@ -1,0 +1,15 @@
+.nomatch {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 60vh;
+    h1 {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 36px;
+        color: #E7816B;
+    }
+}
+.cta {
+    display: none
+}
