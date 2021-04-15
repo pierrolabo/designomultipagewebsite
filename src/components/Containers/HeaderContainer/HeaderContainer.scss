@@ -67,10 +67,11 @@
         } 
         &__menu {
             position: absolute;
-            height: 100%;
+            height: 430vh;
             width: 100%;
             background-color: rgba(0, 0, 0, 0.65);
             opacity: 0;
+            z-index: 999;
             &__nav {
                 display: flex;
                 flex-direction: column;
