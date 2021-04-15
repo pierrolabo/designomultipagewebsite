@@ -1,0 +1,21 @@
+@import '../../styles/variables';
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0 !important;
+    margin-bottom: 330px;
+    @media(min-width: $breakpoint-tablet) {
+        margin-bottom: 347px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        margin-bottom: 384px;
+    }
+}
+.location:not(:first-child) {
+    margin-top: 59px;
+    @media(min-width: $breakpoint-desktop) {
+        margin-top: 33px;
+    }
+}

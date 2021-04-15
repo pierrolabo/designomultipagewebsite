@@ -1,0 +1,160 @@
+@import '../../styles/variables';
+
+.location {
+    width: 100%;
+    height: 714px;
+    @media(min-width: $breakpoint-tablet) {
+        max-width: $max-width-tablet;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        max-width: $max-width-desktop;
+        display: flex;
+        max-height: 326px;
+        min-height: 326px;
+        column-gap: 30px;
+        @for $i from 1 through 3 {
+            @if $i % 2 != 0 {
+                &:nth-child(#{$i}) {
+                    flex-direction: row-reverse;
+                }
+    
+            }
+        }
+       
+    }
+    &--image {
+        width: 100%;
+        height: 320px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media(min-width: $breakpoint-tablet) {
+            border-radius: 15px;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            width: 350px;
+            height: 326px;
+        }
+    }
+    &__contents {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: $color-bg-productcard;
+        padding: 82px 0;
+        @media(min-width: $breakpoint-tablet) {
+            flex-direction: column;
+            height: 100%;
+            max-height: 326px;
+            padding-left: 78px;
+            margin-top: 31px;
+            border-radius: 15px;
+            align-items: flex-start;
+            text-align: left;
+
+        }
+        @media(min-width: $breakpoint-desktop) {
+            margin-top: 0px;
+            border-radius: 15px;
+            width: 730px;
+
+        }
+
+        &--title {
+            font-size: 32px;
+            line-height: 36px;
+            color: $brand-primary-peach;
+            margin-bottom: 32px;
+            @media(min-width: $breakpoint-tablet) {
+                margin-bottom: 20px;
+                font-size: 40px;
+                line-height: 48px;
+            }
+        }
+        &__addresses {
+            @media(min-width: $breakpoint-tablet) {
+                display: flex;
+            }
+            &__contact {
+                margin-top: 33px;
+                @media(min-width: $breakpoint-tablet) {
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 0px;
+                    margin-left: 120px;
+                }
+                @media(min-width: $breakpoint-desktop) {
+                    margin-left: 133px;
+                }
+            }
+            &--subtitle {
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 700;
+            }
+            p {
+                font-size: 15px;
+                line-height: 25px;
+                font-weight: 400;
+                @media(min-width: $breakpoint-tablet) {
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+            }
+        }
+        
+        //  Background image of card content
+        &::after{
+            position: absolute;
+            content: "";
+            top: 0;
+            background-image: url('../../assets/shared/desktop/bg-pattern-three-circles.svg');
+            background-repeat: no-repeat;
+            background-size: 170%;
+            width: 100%;
+            height: 100%;
+            background-position: 0% 2%;
+            @media(min-width: $breakpoint-tablet) {
+                background-image: url('../../assets/shared/desktop/bg-pattern-two-circles.svg');
+                background-size: contain;
+                height: 292px;
+                left: 0;
+                bottom: 0;
+                top: auto;
+                background-position: 4% 50%;
+            }
+            @media(min-width: $breakpoint-desktop) {
+                background-position: -9% 50%;
+            }
+        }
+    }
+
+    &--image.CANADA {
+        background-image: url('../../assets/locations/desktop/image-map-canada.png');
+        @media(min-width: $breakpoint-tablet){
+            background-image: url('../../assets/locations/tablet/image-map-canada.png');
+        }
+        @media(min-width: $breakpoint-desktop){
+            background-image: url('../../assets/locations/desktop/image-map-canada.png');
+        }
+    }
+    &--image.AUSTRALIA {
+        background-image: url('../../assets/locations/desktop/image-map-australia.png');
+        @media(min-width: $breakpoint-tablet){
+            background-image: url('../../assets/locations/tablet/image-map-australia.png');
+        }
+        @media(min-width: $breakpoint-desktop){
+            background-image: url('../../assets/locations/desktop/image-map-australia.png');
+        }
+    }
+    &--image.UK {
+        background-image: url('../../assets/locations/desktop/image-map-united-kingdom.png');
+        @media(min-width: $breakpoint-tablet){
+            background-image: url('../../assets/locations/tablet/image-map-uk.png');
+        }
+        @media(min-width: $breakpoint-desktop){
+            background-image: url('../../assets/locations/desktop/image-map-united-kingdom.png');
+        }
+    }
+}
