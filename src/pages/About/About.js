@@ -1,5 +1,7 @@
 import React from 'react'
 
+import LocationsCard from '../../components/LocationsCard/LocationsCard';
+
 import './About.scss';
 
 export default function About() {
@@ -29,6 +31,7 @@ export default function About() {
   brand’s story and mission.</p>
                     </div>
             </section>
+            <LocationsCard/>
             <section className="about__card card--realdeal">
                 <div className="about__card__img img img--realdeal"/>
                 <div className="about__card__content realdeal--content">
