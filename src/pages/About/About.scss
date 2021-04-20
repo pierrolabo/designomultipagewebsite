@@ -5,8 +5,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 307px;
+    @media(min-width: $breakpoint-tablet) {
+        margin-bottom: 390px;
+    }
     @media(min-width: $breakpoint-desktop) {
         margin-top: 8px !important;
+        margin-bottom: 386px;
     }
     &__card {
         display: flex;

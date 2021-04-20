@@ -15,7 +15,7 @@ export default function Footer() {
                     <img src={Logo} alt="Company Logo" />
                 </Link>
                 <div className="footer__top__navigation">
-                    <Link to="/">OUR COMPANY</Link>
+                    <Link to="/about">OUR COMPANY</Link>
                     <Link to="locations">LOCATIONS</Link>
                     <Link to="contact">CONTACT</Link>
                     

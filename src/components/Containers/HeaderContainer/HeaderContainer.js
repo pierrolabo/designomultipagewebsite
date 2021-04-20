@@ -19,7 +19,7 @@ export default function HeaderContainer() {
         const target = e.target.id
         switch(target) {
             case "ABOUT":
-                history.push("/")
+                history.push("/about")
                 break;
                 case "LOCATIONS":
                 history.push("/locations")
@@ -66,7 +66,7 @@ export default function HeaderContainer() {
                         <img src={Logo} alt=""/>
                     </Link>
                     <nav className="header__navigation hide-on-mobile">
-                        <Link to="/"><h3 className="header__navigation--title">OUR COMPANY</h3></Link>
+                        <Link to="/about"><h3 className="header__navigation--title">OUR COMPANY</h3></Link>
                         <Link to="/locations"><h3 className="header__navigation--title">LOCATIONS</h3></Link>
                         <Link to="/contact"><h3 className="header__navigation--title">CONTACT</h3></Link>
                     </nav>
