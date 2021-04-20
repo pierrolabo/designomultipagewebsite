@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from "react-router-dom";
 import ImgAustralia from '../../assets/shared/desktop/illustration-australia.svg';
 import ImgCanada from '../../assets/shared/desktop/illustration-canada.svg';
 import ImgUK from '../../assets/shared/desktop/illustration-united-kingdom.svg';
@@ -10,25 +10,25 @@ export default function LocationsCard() {
     return (
         <div className="locationscard__container">
             <div className="locationscard">
-                <div className="locationscard__img canada">
+                <div className="locationscard__img backgroundcanada">
                     <img src={ImgCanada} alt=""/>
                 </div>
-                <h1>CANADA</h1>
-                <button type="button">SEE LOCATION</button>
+                <h1 className="locationscard--title">CANADA</h1>
+                <Link to="/locations#canada" className="locationscard--button">SEE LOCATION</Link>
             </div>
             <div className="locationscard">
-                <div className="locationscard__img">
+                <div className="locationscard__img backgroundaustralia">
                     <img src={ImgAustralia} alt=""/>
                 </div>
-                <h1>AUSTRALIA</h1>
-                <button type="button">SEE LOCATION</button>
+                <h1 className="locationscard--title">AUSTRALIA</h1>
+                <Link to="/locations#australia" className="locationscard--button">SEE LOCATION</Link>
             </div>
             <div className="locationscard">
-                <div className="locationscard__img">
+                <div className="locationscard__img backgrounduk">
                     <img src={ImgUK} alt=""/>
                 </div>
-                <h1>UNITED KINGDOM</h1>
-                <button type="button">SEE LOCATION</button>
+                <h1 className="locationscard--title">UNITED KINGDOM</h1>
+                <Link to="/locations#unitedkingdom" className="locationscard--button">SEE LOCATION</Link>
             </div>
         </div>
     )
