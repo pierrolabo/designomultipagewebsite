@@ -7,7 +7,7 @@ export default function UseScrollToTop() {
     useEffect(() => {
         setTimeout(() => {
             // eslint-disable-next-line
-            window.scrollTo(0,0);z
+            window.scrollTo(0,0);
         }, 0)
 
     }, [pathname])
