@@ -1,10 +1,14 @@
 import React from 'react'
+import LocationsCard from '../../components/LocationsCard/LocationsCard';
+import ContactForm from '../../components/ContactForm/ContactForm';
+
+import './Contact.scss';
 
 export default function Contact() {
     return (
         <section className="contact">
-            <h1>Hey ! i m Contact page</h1>
-            <h2>Contact me now !!!</h2>
+           <ContactForm/>
+            <LocationsCard/>
         </section>
     )
 }
