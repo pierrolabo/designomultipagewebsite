@@ -1,0 +1,84 @@
+@import '../../styles/variables';
+
+.contactform {
+    padding: 69px 21px;
+    background-color: $color-bg-card;
+    &__info {
+        h1 {
+            font-size: 32px;
+            line-height: 36px;
+            text-align: center;
+            color: $brand-primary-white;
+        }
+        p {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            color: $brand-primary-white;
+            font-weight: 400;
+        }
+
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 56px;
+
+        label:not(:last-of-type) {
+            margin-bottom: 25px;
+        }
+        label, textarea, input {
+            width: 100%;
+        }
+        label {
+            border-bottom: 1px solid $brand-primary-white;
+        }
+        &--field {
+            font-size: 15px;
+            line-height: 26px;
+            font-weight: 500;
+            color: $brand-primary-white;
+            background-color: $color-bg-card;
+            mix-blend-mode: normal;
+            border: none;
+            padding-left: 10px;
+            outline: none;
+            &::placeholder {
+                opacity: 0.5;
+                vertical-align: top;
+            }
+            &:hover {
+                cursor: pointer;
+            }
+            
+        }
+        input {
+            //height: 36px;
+            padding-bottom: 19px;
+            
+        }
+        textarea {
+            height: 128px;
+            font-weight: 600;
+        }
+        button {
+            margin-top: 40px;
+            border: none;
+            width: 152px;
+            height: 56px;
+            border-radius: 8px;
+            font-size: 15px;
+            line-height: 22px;
+            letter-spacing: 1px;
+            color: $brand-primary-black;
+            font-weight: 500;
+            &:hover {
+                cursor: pointer;
+                background-color: $brand-secondary-light-peach;
+                color: $brand-primary-white
+            }
+        }
+}
+}
