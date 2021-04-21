@@ -3,12 +3,25 @@
 .contactform {
     padding: 69px 21px;
     background-color: $color-bg-card;
+    @media(min-width: $breakpoint-tablet) {
+        max-width: $max-width-tablet;
+        min-width: $max-width-tablet;
+        max-height: 711px;
+        min-height: 711px;
+        border-radius: 12px;
+        padding: 67px 67px;
+    }
     &__info {
         h1 {
             font-size: 32px;
             line-height: 36px;
             text-align: center;
             color: $brand-primary-white;
+            @media(min-width: $breakpoint-tablet) {
+                text-align: left;
+                font-size: 48px;
+                line-height: 48px;
+            }
         }
         p {
             margin-top: 30px;
@@ -17,15 +30,26 @@
             line-height: 25px;
             color: $brand-primary-white;
             font-weight: 400;
+            @media(min-width: $breakpoint-tablet) {
+                text-align: left;
+                max-width: 575px;
+                font-size: 16px;
+                line-height: 26px;
+            }
         }
 
     }
+    //  TODO: play with flex grow on labels
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 56px;
+        @media(min-width: $breakpoint-tablet) {
+            margin-top: 45px;
+            max-height: 291px;
 
+        }
         label:not(:last-of-type) {
             margin-bottom: 25px;
         }
@@ -62,6 +86,9 @@
         textarea {
             height: 128px;
             font-weight: 600;
+            @media(min-width: $breakpoint-tablet) {
+                max-height: 125px;
+             }
         }
         button {
             margin-top: 40px;
@@ -78,6 +105,10 @@
                 cursor: pointer;
                 background-color: $brand-secondary-light-peach;
                 color: $brand-primary-white
+            }
+            @media(min-width: $breakpoint-tablet) {
+               align-self: flex-end;
+               margin-top: 22px;
             }
         }
 }
