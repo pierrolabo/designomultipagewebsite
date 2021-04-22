@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import Logo from '../../assets/shared/desktop/logo-light.png'
 
 import Cta from '../Cta/Cta';
@@ -7,9 +7,12 @@ import Cta from '../Cta/Cta';
 import './Footer.scss';
 
 export default function Footer() {
+    const {pathname} = useLocation()
     return (
         <section className="footer">
-            <Cta/>
+            {
+                pathname !== "/contact" ? <Cta/> : null
+            }
             <div className="footer__top">
                 <Link to="/" className="footer__top--logo">
                     <img src={Logo} alt="Company Logo" />
