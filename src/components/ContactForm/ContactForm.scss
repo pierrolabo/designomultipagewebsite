@@ -2,6 +2,8 @@
 
 .contactform {
     padding: 69px 21px;
+    display: flex;
+    flex-direction: column;
     background-color: $color-bg-card;
     @media(min-width: $breakpoint-tablet) {
         max-width: $max-width-tablet;
@@ -9,7 +11,40 @@
         max-height: 711px;
         min-height: 711px;
         border-radius: 12px;
-        padding: 67px 67px;
+        padding: 0 57px;
+        padding-top: 73px;
+        padding-bottom: 69px;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        max-width: $max-width-desktop;
+        min-width: $max-width-desktop;
+        min-height: 480px;
+        max-height: 480px;
+        flex-direction: row;
+        padding: 0 86px;
+    }
+    &--error {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: 12px;
+        font-style: italic;
+        line-height: 26px;
+        color: $brand-primary-white;
+        display: flex;
+        justify-content: flex-end;
+        height: 26px;
+        margin-right: 9px;
+        vertical-align: middle;
+        &::after {
+            margin-left: 9px;
+            margin-top: 3px;
+            content: "";
+            width: 20px;
+            height: 20px;
+            background-image: url('../../assets/contact/desktop/icon-error.svg');
+            background-size: cover;
+        }
     }
     &__info {
         h1 {
@@ -21,6 +56,9 @@
                 text-align: left;
                 font-size: 48px;
                 line-height: 48px;
+            }
+            @media(min-width: $breakpoint-desktop) {
+                margin-top: 137px;
             }
         }
         p {
@@ -36,28 +74,73 @@
                 font-size: 16px;
                 line-height: 26px;
             }
+            @media(min-width: $breakpoint-desktop) {
+                max-width: 445px;
+            }
         }
 
     }
     //  TODO: play with flex grow on labels
+    &__fields {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-height: 291px;
+       height: 291px;
+        @media(min-width: $breakpoint-tablet) {
+           min-width: 573px;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            max-width: 380px;
+            min-width: 380px;
+            max-height: 291px;
+            min-height: 291px;
+            height: 100%;
+        }
+    }
     &__form {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-top: 56px;
+        height: 100%;
         @media(min-width: $breakpoint-tablet) {
-            margin-top: 45px;
-            max-height: 291px;
-
+            margin-top: 43px;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            margin-top: 56px;
+            margin-left: 100px;
+            height: 100%;
         }
         label:not(:last-of-type) {
-            margin-bottom: 25px;
+            height: 62px;
+            @media(min-width: $breakpoint-tablet) {
+                margin-bottom: 24px;
+                height: 38px;
+                max-height: 38px;
+                padding-bottom: 18px;
+            }
         }
+        label:last-of-type {
+            min-height: 95px;
+            margin-top: 31px;
+            @media(min-width: $breakpoint-tablet) {
+                min-height: 102px;
+                max-height: 102px;
+                margin-top: 0;
+            }
+        }
+        
         label, textarea, input {
             width: 100%;
         }
+        
         label {
             border-bottom: 1px solid $brand-primary-white;
+            position: relative;
+        }
+        input, textarea {
+            height: 99%;
         }
         &--field {
             font-size: 15px;
@@ -76,18 +159,18 @@
             &:hover {
                 cursor: pointer;
             }
+            @media(min-width: $breakpoint-tablet) {
+                padding-left: 19px;
+            }
             
         }
-        input {
-            //height: 36px;
-            padding-bottom: 19px;
-            
-        }
+       
         textarea {
-            height: 128px;
+            //height: 128px;
+            resize: none;
             font-weight: 600;
             @media(min-width: $breakpoint-tablet) {
-                max-height: 125px;
+                //max-height: 125px;
              }
         }
         button {
@@ -109,6 +192,10 @@
             @media(min-width: $breakpoint-tablet) {
                align-self: flex-end;
                margin-top: 22px;
+            }
+            @media(min-width: $breakpoint-desktop) {
+                margin-top: 24px;
+                //margin-bottom: 53px;
             }
         }
 }
