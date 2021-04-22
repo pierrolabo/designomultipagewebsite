@@ -27,9 +27,6 @@ export default function ContactForm() {
             }
           onSubmit={(values, {setSubmitting, resetForm}) => {
             setTimeout(() => {
-
-                console.log(JSON.stringify(values, null, 2));
-                
                 
             }, 400);
             setSubmitting(false);
