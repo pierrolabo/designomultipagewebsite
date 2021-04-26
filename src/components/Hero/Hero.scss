@@ -95,6 +95,7 @@
             z-index: 3;
             border: none;
             border-radius: 8px;
+            -webkit-appearance: button;
             &:hover {
                 cursor: pointer;
                 background-color: $brand-secondary-light-peach;
