@@ -47,6 +47,21 @@
         }
     }
     &__info {
+        position: relative;
+        &::after {
+            @media(min-width: $breakpoint-desktop) {
+                position: absolute;
+                content: "";
+                top: 0;
+                left: -87px;
+                background-position: 76% 100%;
+                width: 640px;
+                height: 100%;
+                background-image: url('../../assets/contact/desktop/bg-pattern-hero-desktop.svg');
+                background-repeat: no-repeat;
+                z-index: 1;
+            }
+        }
         h1 {
             font-size: 32px;
             line-height: 36px;

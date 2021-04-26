@@ -12,6 +12,18 @@
     }
     @media(min-width: $breakpoint-desktop) {
         margin-bottom: 361px;
+        &::before {
+            position: absolute;
+            content: "";
+            top: 266px;
+            left: 0;
+            background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
+            background-repeat: no-repeat;
+            width: 1006px;
+            height: 594px;
+            z-index: -1;
+
+        }
 
     }
     &__category {

@@ -27,7 +27,7 @@ main {
         &::before {
             content: "";
             position: absolute;
-            top: 15%;
+            top: 276px;
             width: 100%;
             background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
             background-repeat: no-repeat;
@@ -38,7 +38,7 @@ main {
         &::after {
             content: "";
             position: absolute;
-            bottom:  -16%;
+            bottom:  -2%;
             width: 100%;
             background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
             background-repeat: no-repeat;

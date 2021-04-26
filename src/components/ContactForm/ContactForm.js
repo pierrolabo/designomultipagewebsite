@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./ContactForm.scss"
+import './test.css';
 
 import {Formik} from "formik";
 import * as Yup from 'yup';

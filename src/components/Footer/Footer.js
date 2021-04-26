@@ -9,7 +9,7 @@ import './Footer.scss';
 export default function Footer() {
     const {pathname} = useLocation()
     return (
-        <section className="footer">
+        <section className={`footer ${pathname === "/contact" ? "footer__contact" : null}`}>
             {
                 pathname !== "/contact" ? <Cta/> : null
             }

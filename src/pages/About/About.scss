@@ -12,6 +12,33 @@
     @media(min-width: $breakpoint-desktop) {
         margin-top: 8px !important;
         margin-bottom: 386px;
+        position: relative;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        &::before {
+            position: absolute;
+            content: "";
+            top: 307px;
+            left: 0;
+            background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
+            background-repeat: no-repeat;
+            width: 1006px;
+            height: 594px;
+            z-index: -1;
+
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            bottom: 357px;
+            left: 57%;
+            background-image: url('../../assets/shared/desktop/bg-pattern-leaf.svg');
+            background-repeat: no-repeat;
+            width: 1006px;
+            height: 594px;
+            z-index: -1;
+
+        }
     }
     &__card {
         display: flex;
