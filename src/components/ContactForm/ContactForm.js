@@ -1,10 +1,11 @@
-import React from 'react'
+import React, {useState} from 'react'
 import {Formik} from "formik";
 import * as Yup from 'yup';
 
 import "./ContactForm.scss"
 
 export default function ContactForm() {
+    const [success, setSuccess] = useState(false)
     return (
 
         <section className="contactform">
@@ -28,6 +29,7 @@ export default function ContactForm() {
             setTimeout(() => {
                 
             }, 400);
+            setSuccess(true)
             setSubmitting(false);
             resetForm()
           }}>
@@ -44,7 +46,10 @@ export default function ContactForm() {
               {/* eslint-disable-next-line */}
               <label htmlFor="message"><textarea id="email" className="contactform__form--field" cols="30" row="2" placeholder="Your Message" {...formik.getFieldProps('message')}></textarea>{formik.touched.message && formik.errors.message ? (<span className="contactform--error">{formik.errors.message}</span>) : null}</label>
               </div>
-          <button type="submit">Submit</button>    
+              {
+                  success !== true ? (<button type="submit">Submit</button>) : <h3 className="contactform--success">Success !!</h3>
+              }
+              
           </form>
              )} 
           </Formik>

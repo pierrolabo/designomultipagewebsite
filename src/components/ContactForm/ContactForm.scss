@@ -46,6 +46,16 @@
             background-size: cover;
         }
     }
+    &--success {
+        color: $brand-primary-white;
+        font-weight: 700;
+        padding: 54px;
+        animation: fadeIn 3s;
+    }
+    @keyframes fadeIn {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
     &__info {
         position: relative;
         &::after {
