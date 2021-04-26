@@ -7,7 +7,7 @@ export default function ProductCard({img, title, text, style}) {
     return (
         <section className="productcard">
             <div className="productcard__image">
-                <img src={img} alt=""/>
+                <img src={img} alt={`${title} screenshot`}/>
             </div>
             <div className="productcard__info">
                 <h1 className="productcard__info--title">{title}</h1>
