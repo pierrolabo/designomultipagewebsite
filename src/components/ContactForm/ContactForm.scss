@@ -204,6 +204,8 @@
             letter-spacing: 1px;
             color: $brand-primary-black;
             font-weight: 500;
+            -webkit-appearance: button;
+            background-color: #fff;
             &:hover {
                 cursor: pointer;
                 background-color: $brand-secondary-light-peach;

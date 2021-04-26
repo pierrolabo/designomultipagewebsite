@@ -108,6 +108,8 @@
             font-weight: 500;
             text-transform: uppercase;
             margin-top: 24px;
+            -webkit-appearance: button;
+            background-color: #fff;
             &:hover {
                 cursor: pointer;
                 background-color: $brand-secondary-light-peach;
