@@ -95,7 +95,6 @@
         }
 
     }
-    //  TODO: play with flex grow on labels
     &__fields {
         display: flex;
         flex-direction: column;
@@ -181,12 +180,8 @@
         }
        
         textarea {
-            //height: 128px;
             resize: none;
             font-weight: 600;
-            @media(min-width: $breakpoint-tablet) {
-                //max-height: 125px;
-             }
         }
         button {
             margin-top: 40px;
@@ -210,7 +205,6 @@
             }
             @media(min-width: $breakpoint-desktop) {
                 margin-top: 24px;
-                //margin-bottom: 53px;
             }
         }
 }

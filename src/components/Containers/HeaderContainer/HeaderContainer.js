@@ -2,11 +2,11 @@ import React, {useState, useEffect} from 'react'
 import {Link, useHistory} from "react-router-dom";
 import {motion} from "framer-motion";
 
-import './HeaderContainer.scss';
 import Logo from '../../../assets/shared/desktop/logo-dark.png'
 import LogoMenuActive from '../../../assets/shared/mobile/icon-close.svg'
 import LogoMenu from '../../../assets/shared/mobile/icon-hamburger.svg'
 
+import './HeaderContainer.scss';
 // eslint-disable-next-line no-undef
 const menuElm = document.getElementById('menu-root');
 
@@ -63,7 +63,7 @@ export default function HeaderContainer() {
         <div className="header__container">
             <div className="header">
                     <Link to="/" className="header__logo">
-                        <img src={Logo} alt=""/>
+                        <img src={Logo} alt="company logo"/>
                     </Link>
                     <nav className="header__navigation hide-on-mobile">
                         <Link to="/about"><h3 className="header__navigation--title">OUR COMPANY</h3></Link>
@@ -71,7 +71,7 @@ export default function HeaderContainer() {
                         <Link to="/contact"><h3 className="header__navigation--title">CONTACT</h3></Link>
                     </nav>
                 <div className="header__logomenu hide-on-tablet" role="button" tabIndex="0" onKeyPress={() => setActive(!isActive)} onClick={() => setActive(!isActive)}>
-                    <img src={isActive ? LogoMenuActive : LogoMenu} alt=""/>
+                    <img src={isActive ? LogoMenuActive : LogoMenu} alt={`${isActive ? "menu-close" : "menu-open"} `}/>
                 </div>
             </div>
         </div>

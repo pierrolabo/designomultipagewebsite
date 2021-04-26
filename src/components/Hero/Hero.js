@@ -16,7 +16,7 @@ export default function Hero() {
             </Link>   
             </div>
             <div className="hero__img__container">
-                <img src={HeroImg} alt=""/>
+                <img src={HeroImg} alt="aesthetic design on an iphone"/>
             </div>
         </section>
     )

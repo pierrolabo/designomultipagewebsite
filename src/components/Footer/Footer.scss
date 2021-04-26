@@ -1,10 +1,8 @@
 @import '../../styles/variables';
-/*
 .footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 226px !important;
     background-color: $brand-primary-black;
     height: 815px;
     color: $brand-primary-white;
@@ -13,166 +11,10 @@
     @media(min-width: $breakpoint-tablet) {
        height: 423px;
        padding: 0 39px;
-       margin-top: 287px !important;
     }
     @media(min-width: $breakpoint-desktop) {
         height: 423px;
         padding: 0 165px;
-        margin-top: 400px !important;
-     }
-    &__top {
-        padding-top: 257px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        @media(min-width: $breakpoint-tablet) {
-            padding-top: 167px;
-            padding-bottom: 44px;
-            flex-direction: row;
-            border-bottom: 1px solid rgba(151, 151, 151, .1);
-            max-width: $max-width-tablet;
-        }
-        @media(min-width: $breakpoint-desktop) {
-            max-width: $max-width-desktop;
-        }
-        &--logo {
-            width: 100%;
-            text-align: center;
-            border-bottom: 1px solid rgba(151, 151, 151, .1);
-            @media(min-width: $breakpoint-tablet) {
-                margin-top: 0px !important;
-                border-bottom: none;
-                text-align: left;
-            }
-            img {
-                margin-bottom: 23px;
-                @media(min-width: $breakpoint-tablet) {
-                    margin-bottom: 0;
-                }
-            width: 203px;
-            }
-        }
-        &__navigation {
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-
-            @media(min-width: $breakpoint-tablet) {
-                flex-direction: row;
-                width: 100%;
-                min-width: 370px;
-                max-width: 370px;
-                justify-content: space-between;
-            }
-            a {
-                text-decoration: none;
-                font-size: 14px;
-                line-height: 14px;
-                letter-spacing: 2px;
-                color: $brand-primary-white;
-                margin-top: 30px;
-                text-align: center;
-                &:hover {
-                    border-bottom: 1px solid $brand-secondary-dark-grey;
-                }
-                @media(min-width: $breakpoint-tablet) {
-                    margin-top: 0;
-                    height: 16px;
-                    align-items: center;
-                }
-            }
-        }
-    }
-    &__bottom {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        margin-top: 40px;
-        @media(min-width: $breakpoint-tablet) {
-            flex-direction: row;
-            justify-content: space-between;
-            max-width: $max-width-tablet;
-
-        }
-        @media(min-width: $breakpoint-desktop) {
-            max-width: $max-width-desktop;
-        }
-        &__details {
-            @media(min-width: $breakpoint-tablet) {
-                display: flex;
-            }
-            &--address:not(:first-child) {
-                margin-top: 40px;
-            }
-            &--address {
-                @media(min-width: $breakpoint-tablet) {
-                    margin-top: 0px !important;
-                    text-align: left;
-                    &:not(:first-child) {
-                        margin-left: 56px;
-                        p {
-                            font-weight: 700;
-                        }
-                    }
-                }
-                @media(min-width: $breakpoint-desktop) {
-                    &:not(:first-child) {
-                        margin-left: 205px;
-                    }
-                }
-                color: #8e8d8e;
-                text-align: center;
-                h4 {
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
-                p {
-                    font-weight: 400;
-                    font-size: 16px;
-                    line-height: 26px;
-                }
-            }
-        }
-        &__logos {
-            margin-top: 40px;
-            &--logo:not(:first-child) {
-                margin-left: 16px;
-            }
-            &--logo:hover {
-                cursor: pointer;
-                path {
-                    fill: $brand-secondary-light-peach;
-                }
-            }
-           
-        }
-    }
-}
-
-*/
-
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    //margin-top: 226px !important;
-    background-color: $brand-primary-black;
-    height: 815px;
-    color: $brand-primary-white;
-    padding: 0 24px;
-    position: relative;
-    @media(min-width: $breakpoint-tablet) {
-       height: 423px;
-       padding: 0 39px;
-       //margin-top: 287px;
-    }
-    @media(min-width: $breakpoint-desktop) {
-        height: 423px;
-        padding: 0 165px;
-        //margin-top: 380px !important;
      }
      &__contact {
          max-height: 626px;

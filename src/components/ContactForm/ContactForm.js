@@ -1,10 +1,8 @@
 import React from 'react'
-
-import "./ContactForm.scss"
-import './test.css';
-
 import {Formik} from "formik";
 import * as Yup from 'yup';
+
+import "./ContactForm.scss"
 
 export default function ContactForm() {
     return (

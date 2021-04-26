@@ -3,10 +3,8 @@
 .quality {
     display: flex;
     flex-direction: column;
-    //justify-content: space-between;
     align-items: center;
     height: 412px;
-    //margin-bottom: 35px;
     margin-bottom: 80px;
     @media(min-width: $breakpoint-tablet) {
         flex-direction: row;
