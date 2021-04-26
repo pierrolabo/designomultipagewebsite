@@ -28,26 +28,31 @@
     margin-top: 0 !important;
     @media(min-width: $breakpoint-tablet) {
         flex-direction: row;
+        height: 310px;
+
     }
     @media(min-width: $breakpoint-desktop) {
         flex-direction: column;
+        height: 478px;
+        width: 350px;
+
     }
     &__image {
         max-width: 327px;
         min-width: 327px;
         max-height: 320px;
-        min-height: 320px;
+        height: 320px;
         @media(min-width: $breakpoint-tablet) {
             max-width: 339px;
             min-width: 339px;
             max-height: 310px;
-            min-height: 310px;
+            height: 310px;
         }
         @media(min-width: $breakpoint-desktop) {
             max-width: 350px;
             min-width: 350px;
             max-height: 320px;
-            min-height: 320px;
+            height: 320px;
         }
         display: flex;
         img {
