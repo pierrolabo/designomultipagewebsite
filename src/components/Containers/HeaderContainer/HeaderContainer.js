@@ -46,15 +46,18 @@ export default function HeaderContainer() {
 
     }
     const handleEscape = (event) => {
+        console.log(event)
        if(event.target.id === "header__menu") {
            setActive(!isActive)
        }
     }
     useEffect(() => {
         if(isActive && menuElm) menuElm.addEventListener('click', handleEscape, false)
+        if(isActive && menuElm) menuElm.addEventListener('touchstart', handleEscape, false)
         return () => {
             if(menuElm) {
                 menuElm.removeEventListener('click', handleEscape, false)
+                menuElm.removeEventListener('touchstart', handleEscape, false)
             }
         }
     }, [handleEscape, isActive])
