@@ -8,7 +8,7 @@ export default function About() {
     return (
         <section className="about">
             <section className="about__card card--hero">
-                <div className="about__card__img img img--hero"/>
+                <div className="about__card__img img img--hero" alt="team working together"/>
                 <div className="about__card__content hero--content">
                     <h1 className="about__card__content--title">About Us</h1>
                     <p className="about__card__content--text">Founded in 2010, we are a creative agency that produces lasting results for our clients. 
@@ -18,7 +18,7 @@ export default function About() {
                     </div>
             </section>
             <section className="about__card card--talent">
-                <div className="about__card__img img img--talent"/>
+                <div className="about__card__img img img--talent" alt="coworker looking at pictures"/>
                 <div className="about__card__content talent--content">
                     <h1 className="about__card__content--title">World-class talent</h1>
                     <p className="about__card__content--text">We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
@@ -33,7 +33,7 @@ export default function About() {
             </section>
             <LocationsCard/>
             <section className="about__card card--realdeal">
-                <div className="about__card__img img img--realdeal"/>
+                <div className="about__card__img img img--realdeal" alt="coworker putting picture on wall"/>
                 <div className="about__card__content realdeal--content">
                     <h1 className="about__card__content--title">The real deal</h1>
                     <p className="about__card__content--text">As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.

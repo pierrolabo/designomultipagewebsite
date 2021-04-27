@@ -17,7 +17,7 @@ export default function CardCategory({title, link}) {
     const type = title.split(" ")[0].toLowerCase();
 
     return (
-        <div className={`cardcategory ${type}`}>
+        <div className={`cardcategory ${type}`} alt={`${type}`}>
             <Link to={link}>
             <div className="cardcategory__content">
             <h2>{title}</h2>

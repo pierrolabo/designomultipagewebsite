@@ -6,7 +6,7 @@ import './Location.scss';
 export default function Location({country, office, street, city, phone, mobile, type}) {
     return (
         <section className="location" id={`${country.toLowerCase().replace(" ", "")}`}>
-            <div className={`location--image ${type}`}/>
+            <div className={`location--image ${type}`} alt={`map of ${type}`}/>
             <div className="location__contents">
                     <h1 className="location__contents--title">{country}</h1>
                 <div className="location__contents__addresses">
