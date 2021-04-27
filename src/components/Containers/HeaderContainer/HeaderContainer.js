@@ -46,7 +46,6 @@ export default function HeaderContainer() {
 
     }
     const handleEscape = (event) => {
-        console.log(event)
        if(event.target.id === "header__menu") {
            setActive(!isActive)
        }
