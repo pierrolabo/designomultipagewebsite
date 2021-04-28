@@ -1,27 +1,4 @@
 @import '../../styles//variables';
-
-.productlist {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: minmax(327px, 327px);
-    grid-template-rows: repeat(auto-fit, minmax(478px, 478px));
-    width: $max-width-mobile; 
-    gap: 30px;
-    @media(min-width: $breakpoint-tablet) {
-        grid-template-columns: minmax(689px, 689px);
-        grid-template-rows: repeat(auto-fit, minmax(310px, 310px));
-        width: $max-width-tablet;
-        gap: 30px;
-    }
-    @media(min-width: $breakpoint-desktop) {
-        grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
-        grid-template-rows: repeat(auto-fill, minmax(478px, 478px));
-        width: $max-width-desktop;
-        row-gap: 30px;
-    }
-    margin-top: 120px;
-}
-
 .productcard {
     display: flex;
     flex-direction: column;
@@ -29,15 +6,14 @@
     @media(min-width: $breakpoint-tablet) {
         flex-direction: row;
         height: 310px;
-
     }
     @media(min-width: $breakpoint-desktop) {
         flex-direction: column;
         height: 478px;
         width: 350px;
-
     }
     &__image {
+        display: flex;
         max-width: 327px;
         min-width: 327px;
         max-height: 320px;
@@ -54,7 +30,6 @@
             max-height: 320px;
             height: 320px;
         }
-        display: flex;
         img {
             height: 100%;
             width: 100%;
@@ -87,7 +62,7 @@
         &:hover {
             cursor: pointer;
             background-color: $brand-primary-peach;
-            h1, p {
+            .productcard__info__title, .productcard__info__text {
                 color: $brand-primary-white;
             }
         }
@@ -104,9 +79,8 @@
             border-bottom-left-radius: 15px;
             border-bottom-right-radius: 15px;
         }
-        &--title {
+        &__title {
             margin-top: 32px;
-
             font-size: 20px;
             line-height: 26px;
             letter-spacing: 5px;
@@ -121,15 +95,13 @@
                 border-bottom-right-radius: 15px;
             }
         }
-        &--text {
+        &__text {
             margin-top: 26px;
-
             font-size: 16px;
             line-height: 26px;
             color: $brand-secondary-dark-grey;
             max-width: 266px;
             text-align: center;
-
             @media(min-width: $breakpoint-tablet) {
                 margin-top: 20px;
                 max-width: 27ch;
