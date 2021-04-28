@@ -14,7 +14,7 @@ export default function GraphicDesign() {
     return (
         <section className="graphicdesign">
             <HeaderDesign
-                type="graphicdesign--background"
+                type="graphicdesign__background"
                 title="Graphic Design"
                 text="We deliver eye-catching branding materials that are tailored to meet your business objectives."
             />
