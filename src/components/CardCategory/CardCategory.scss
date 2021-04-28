@@ -4,43 +4,10 @@
 .cardcategory {
     position: relative;
     width: 100%;
-    height: 200px;
+    height: 250px;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
-    &__content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        border-radius: 16px;
-        h2 {
-            font-weight: 500;
-            font-size: 28px;
-            line-height: 36px;
-            letter-spacing: 1.4px;
-            color: $brand-primary-white;
-            margin-bottom: 22px;
-            @media(min-width: $breakpoint-tablet) {
-                font-size: 40px;
-                line-height: 48px;
-                letter-spacing: 2px;
-            }
-        }
-        h4 {
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 22px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: $brand-primary-white;
-            
-        }
-        &--icon {
-            padding-left: 22px;
-        }
-    }
     &:hover {
         cursor: pointer;
         .cardcategory__content {
@@ -49,6 +16,47 @@
     }
     @media(min-width: $breakpoint-tablet) {
         max-height: 200px;
+        width: $max-width-tablet;
+    }
+    @media(min-width: $breakpoint-desktop) {
+        max-height: 308px;
+        height: 308px;
+        max-width: 541px;
+        min-width: 541px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        border-radius: 16px;
+        &--icon {
+            padding-left: 22px;
+        }
+    }
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 1.4px;
+        color: $brand-primary-white;
+        margin-bottom: 12px;
+        @media(min-width: $breakpoint-tablet) {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
+            margin-bottom: 23px;
+        }
+    }
+    &__subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $brand-primary-white;
+        
     }
     &.web {
         background-image: url('../../assets/home/mobile/image-web-design.jpg');

@@ -10,8 +10,8 @@ export default function ProductCard({img, title, text, style}) {
                 <img src={img} alt={`${title} screenshot`}/>
             </div>
             <div className="productcard__info">
-                <h1 className="productcard__info--title">{title}</h1>
-                <p className="productcard__info--text" style={style}>{text}</p>
+                <h1 className="productcard__info__title">{title}</h1>
+                <p className="productcard__info__text" style={style}>{text}</p>
             </div>
         </section>
     )

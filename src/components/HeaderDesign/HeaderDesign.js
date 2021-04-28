@@ -6,8 +6,8 @@ import './HeaderDesign.scss';
 export default function HeaderDesign({type, title, text}) {
     return (
         <section className={`headerdesign ${type}`}>
-            <h1 className="headerdesign--title">{title}</h1>
-            <p className="headerdesign--text">{text}</p>
+            <h1 className="headerdesign__title">{title}</h1>
+            <p className="headerdesign__text">{text}</p>
         </section>
     )
 }

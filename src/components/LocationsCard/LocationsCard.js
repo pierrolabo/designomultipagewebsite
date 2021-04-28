@@ -13,22 +13,22 @@ export default function LocationsCard() {
                 <div className="locationscard__img backgroundcanada">
                     <img src={ImgCanada} alt=""/>
                 </div>
-                <h1 className="locationscard--title">CANADA</h1>
-                <Link to="/locations" className="locationscard--button">SEE LOCATION</Link>
+                <h1 className="locationscard__title">CANADA</h1>
+                <Link to="/locations" className="locationscard__button">SEE LOCATION</Link>
             </div>
             <div className="locationscard">
                 <div className="locationscard__img backgroundaustralia">
                     <img src={ImgAustralia} alt=""/>
                 </div>
-                <h1 className="locationscard--title">AUSTRALIA</h1>
-                <Link to="/locations" className="locationscard--button">SEE LOCATION</Link>
+                <h1 className="locationscard__title">AUSTRALIA</h1>
+                <Link to="/locations" className="locationscard__button">SEE LOCATION</Link>
             </div>
             <div className="locationscard">
                 <div className="locationscard__img backgrounduk">
                     <img src={ImgUK} alt=""/>
                 </div>
-                <h1 className="locationscard--title">UNITED KINGDOM</h1>
-                <Link to="/locations" className="locationscard--button">SEE LOCATION</Link>
+                <h1 className="locationscard__title">UNITED KINGDOM</h1>
+                <Link to="/locations" className="locationscard__button">SEE LOCATION</Link>
             </div>
         </div>
     )

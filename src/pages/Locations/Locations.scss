@@ -13,9 +13,4 @@
         margin-bottom: 384px;
     }
 }
-.location:not(:first-child) {
-    margin-top: 59px;
-    @media(min-width: $breakpoint-desktop) {
-        margin-top: 33px;
-    }
-}
+

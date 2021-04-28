@@ -21,9 +21,13 @@
             width: 1006px;
             height: 594px;
             z-index: -1;
-
         }
-
+    }
+    &--background {
+        @media(min-width: $breakpoint-desktop) {
+            background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
+            background-position: -25% 48% !important;
+        }
     }
     &__category {
         width: $max-width-mobile;
@@ -45,33 +49,6 @@
                 margin-right: 30px;
             }
         }
-        .cardcategory {
-            height: 250px;
-            @media(min-width: $breakpoint-tablet) {
-                width: $max-width-tablet;
-            }
-            @media(min-width: $breakpoint-desktop) {
-                max-height: 308px;
-                height: 308px;
-                max-width: 541px;
-                min-width: 541px;
-            }
-            &__content {
-                h2 {
-                    margin-bottom: 12px;
-                    @media(min-width: $breakpoint-tablet) {
-                        margin-bottom: 23px;
-                    }
-                }
-            }
-        }
-        
     }
 }
 
-.appdesign--background {
-    @media(min-width: $breakpoint-desktop) {
-        background-image: url('../../assets/app-design/desktop/bg-pattern-intro-app.svg');
-        background-position: -25% 48% !important;
-    }
-}

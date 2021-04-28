@@ -37,18 +37,16 @@
 
     }
     @media(min-width: $breakpoint-desktop) {
+        flex-direction: row;
+        justify-content: space-between;
         width: $max-width-desktop;
         max-width: $max-width-desktop;
         height: 292px;
         padding: 74px 96px;
         background-position: 102% 50%;
-        flex-direction: row;
-        justify-content: space-between;
-
         background-repeat: no-repeat;
 
     }
-
     &__details {
         display: flex;
         flex-direction: column;
@@ -56,9 +54,8 @@
         align-items: center;
         @media(min-width: $breakpoint-desktop) {
             align-items: flex-start;
-    
         }
-        &--title {
+        &__title {
             letter-spacing: 0px;
             font-size: 32px;
             line-height: 36px;
@@ -73,7 +70,7 @@
                text-align: left;
             }
         }
-        &--text {
+        &__text {
             color: $brand-primary-white;
             font-size: 15px;
             line-height: 25px;
@@ -91,34 +88,33 @@
         }
     }
     &__button {
-        @media(min-width: $breakpoint-desktop) {
-            height: 100%;
-           display: flex;
-           align-items: center;
-         }
-        &--button {
-            height: 56px;
-            width: 152px;
-            border: none;
-            border-radius: 8px;
-            color: $brand-secondary-dark-grey;
-            font-size: 15px;
-            line-height: 22px;
-            letter-spacing: 1px;
-            font-weight: 500;
-            text-transform: uppercase;
-            margin-top: 24px;
-            -webkit-appearance: button;
-            background-color: #fff;
-            &:hover {
-                cursor: pointer;
-                background-color: $brand-secondary-light-peach;
-                color: $brand-primary-white
-            }
+        &__container {
             @media(min-width: $breakpoint-desktop) {
-             margin-top: 0;
+                height: 100%;
+               display: flex;
+               align-items: center;
              }
         }
+        height: 56px;
+        width: 152px;
+        border: none;
+        border-radius: 8px;
+        color: $brand-secondary-dark-grey;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: 24px;
+        -webkit-appearance: button;
+        background-color: #fff;
+        &:hover {
+            cursor: pointer;
+            background-color: $brand-secondary-light-peach;
+            color: $brand-primary-white
+        }
+        @media(min-width: $breakpoint-desktop) {
+            margin-top: 0;
+        }
     }
-    
 }

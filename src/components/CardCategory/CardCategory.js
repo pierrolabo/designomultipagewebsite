@@ -20,8 +20,8 @@ export default function CardCategory({title, link}) {
         <div className={`cardcategory ${type}`} alt={`${type}`}>
             <Link to={link}>
             <div className="cardcategory__content">
-            <h2>{title}</h2>
-            <h4>VIEW PROJECTS<img className="cardcategory__content--icon" src={IconRight} alt="right icon"/></h4>
+            <h2 className="cardcategory__title">{title}</h2>
+            <h4 className="cardcategory__subtitle">VIEW PROJECTS<img className="cardcategory__content--icon" src={IconRight} alt="right icon"/></h4>
                 </div>
             </Link>
         </div>
