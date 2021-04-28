@@ -6,12 +6,12 @@ import './Quality.scss';
 export default function Quality({title, description, image}) {
     return (
         <div className="quality">
-            <div className="quality--image">
+            <div className="quality__image">
                 <img src={image} alt=""/>
             </div>
             <div className="quality__info">
-                <h3 className="quality__info--title">{title}</h3>
-                <p className="quality__info--description">{description}</p>
+                <h3 className="quality__info__title">{title}</h3>
+                <p className="quality__info__description">{description}</p>
             </div>
         </div>
     )
