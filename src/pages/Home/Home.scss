@@ -7,19 +7,16 @@
     margin-bottom: 247px;
     @media(min-width: $breakpoint-tablet) {
         padding: 0 0;
-        max-width: 689px;
+        max-width: $max-width-tablet;
         margin-bottom: 138px;
 
     }
     @media(min-width: $breakpoint-desktop) {
         flex-direction: row;
         height: 412px;
-        max-width: 1111px;
-
+        max-width: $max-width-desktop;
         margin-bottom: 280px;
-
     }
-
 }
 
 main {
@@ -47,6 +44,5 @@ main {
             background-position: -2% 12%;
             height: 700px;
         }
-
     }
 }
