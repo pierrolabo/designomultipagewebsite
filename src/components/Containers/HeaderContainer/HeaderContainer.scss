@@ -1,71 +1,71 @@
 
 @import '../../../styles/variables';
 
-.header__container {
-    height: 96px;
-    padding:0 23px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    @media(min-width: $breakpoint-tablet) {
-        padding: 64px 39px;
-        justify-content: center;
-    }
-    @media(min-width: $breakpoint-desktop) {
-        padding: 64px 165px ;
-    }
-    
-} 
+ 
 
 .header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     @media(min-width: $breakpoint-tablet) {
-        max-width: 689px;
+        max-width: $max-width-tablet;
     }
     @media(min-width: $breakpoint-desktop) {
-        max-width: 1111px;
+        max-width: $max-width-desktop;
     }
-        &__logo {
-            display: flex;
-            & img {
-                height: 27px;
-                width: 202px;
-                object-fit: cover;
+    &__container {
+        height: 96px;
+        padding:0 23px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        @media(min-width: $breakpoint-tablet) {
+            padding: 64px 39px;
+            justify-content: center;
+        }
+        @media(min-width: $breakpoint-desktop) {
+            padding: 64px 165px ;
+        }
+        
+    }
+    &__logo {
+        display: flex;
+        & img {
+            height: 27px;
+            width: 202px;
+            object-fit: cover;
+        }
+    }
+    &__toggleicon {
+        display: flex;
+        align-items: center;
+        height: 27px;
+        &:hover {
+            cursor: pointer;
+        }
+        img {
+            height: 20px;
+        }
+    }   
+    &__navigation {
+        display: flex;
+        align-items: center;
+        &__title {
+            color: $brand-secondary-dark-grey;
+            font-size: 14px;
+            line-height: 14px;
+            font-weight: 400;
+        }
+        &__link {
+            &:hover {
+                border-bottom: 1px solid $brand-secondary-dark-grey;
+            }
+            &:not(:last-child) {
+                margin-right: 43px;
             }
         }
-        &__logomenu {
-            display: flex;
-            align-items: center;
-            height: 27px;
-            &:hover {
-                cursor: pointer;
-            }
-            img {
-                height: 20px;
-            }
-        }   
-        &__navigation {
-            display: flex;
-            align-items: center;
-            &--title {
-                color: $brand-secondary-dark-grey;
-                font-size: 14px;
-                line-height: 14px;
-                font-weight: 400;
-            }
-            a {
-                &:hover {
-                        border-bottom: 1px solid $brand-secondary-dark-grey;
-                }
-                &:not(:last-child) {
-                    margin-right: 43px;
-                }
-
-            }
-        } 
-        &__menu {
+    } 
+        &__sidemenu {
             position: absolute;
             height: 100vh;
             width: 100%;
@@ -79,7 +79,7 @@
                 height: 235px;
                 padding: 49px 0 49px 24px;
                 background-color: $brand-primary-black;
-                &--title {
+                &__title {
                     color: $brand-primary-white;
                     font-size: 24px;
                     line-height: 25px;
