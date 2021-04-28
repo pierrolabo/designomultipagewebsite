@@ -8,6 +8,28 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
+    &--title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 1.4px;
+        color: $brand-primary-white;
+        margin-bottom: 22px;
+        @media(min-width: $breakpoint-tablet) {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
+        }
+    }
+    &--subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $brand-primary-white;
+        
+    }
     &__content {
         display: flex;
         flex-direction: column;
@@ -15,28 +37,6 @@
         align-items: center;
         height: 100%;
         border-radius: 16px;
-        h2 {
-            font-weight: 500;
-            font-size: 28px;
-            line-height: 36px;
-            letter-spacing: 1.4px;
-            color: $brand-primary-white;
-            margin-bottom: 22px;
-            @media(min-width: $breakpoint-tablet) {
-                font-size: 40px;
-                line-height: 48px;
-                letter-spacing: 2px;
-            }
-        }
-        h4 {
-            font-weight: 500;
-            font-size: 15px;
-            line-height: 22px;
-            letter-spacing: 5px;
-            text-transform: uppercase;
-            color: $brand-primary-white;
-            
-        }
         &--icon {
             padding-left: 22px;
         }
