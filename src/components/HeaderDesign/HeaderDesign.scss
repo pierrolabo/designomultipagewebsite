@@ -6,29 +6,24 @@
     align-items: center;
     height: 320px;
     width: 100%;
-
     background-color: $brand-primary-peach;
     background-image: url('../../assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg');
     background-position: 100% 2%;
     @media(min-width: $breakpoint-tablet) {
-        background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
-        background-repeat: no-repeat;
-        background-position: 12% 47% !important;
-    }
-    @media(min-width: $breakpoint-tablet) {
         max-width: $max-width-tablet;
         min-width: $max-width-tablet;
         max-height: 252px;
-
         border-radius: 12px;
+        background-image: url('../../assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg');
+        background-repeat: no-repeat;
+        background-position: 12% 47% !important;
     }
     @media(min-width: $breakpoint-desktop) {
         min-width: $max-width-desktop;
         max-width: $max-width-desktop;
     }
-    &--title {
+    &__title {
         margin-top: 102px;
-
         font-size: 32px;
         line-height: 36px;
         color: $brand-primary-white;
@@ -37,9 +32,8 @@
             font-size: 48px;
             line-height: 48px;
         }
-
     }
-    &--text {
+    &__text {
         margin-top: 33px;
         text-align: center;
         max-width: 327px;
@@ -53,5 +47,4 @@
             line-height: 26px;   
         }
     }
-
 }
