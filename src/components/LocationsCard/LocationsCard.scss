@@ -1,23 +1,7 @@
 @import '../../styles/variables';
 
-.locationscard__container {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 120px 0;
-    @media(min-width: $breakpoint-desktop) {
-        flex-direction: row;
-        min-width: $max-width-desktop;
-    }
-}
 
-.locationscard:not(:first-child) {
-    margin-top: 47px;
-    @media(min-width: $breakpoint-desktop) {
-        margin-top: 0px;
-        margin-left: 36px;
-    }
-}
+
 .locationscard {
     display: flex;
     flex-direction: column;
@@ -27,12 +11,29 @@
     max-height: 364px;
     min-width: 350px;
     max-width: 350px;
-    &--title {
+    &:not(:first-child) {
+        margin-top: 47px;
+        @media(min-width: $breakpoint-desktop) {
+            margin-top: 0px;
+            margin-left: 36px;
+        }
+    }
+    &__container {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 120px 0;
+        @media(min-width: $breakpoint-desktop) {
+            flex-direction: row;
+            min-width: $max-width-desktop;
+        }
+    }
+    &__title {
         font-size: 20px;
         line-height: 26px;
         color: $brand-secondary-dark-grey;
     }
-    &--button {
+    &__button {
         width: 152px;
         height: 56px;
         border: none;
