@@ -26,9 +26,6 @@
             max-height: 321px;
             margin-top: 40px !important;
         }
-         .footer__top {
-             padding-top: 64px;
-         }
      }
     &__top {
         padding-top: 257px;
@@ -46,7 +43,7 @@
         @media(min-width: $breakpoint-desktop) {
             max-width: $max-width-desktop;
         }
-        &--logo {
+        &__logo {
             width: 100%;
             text-align: center;
             border-bottom: 1px solid rgba(151, 151, 151, .1);
@@ -63,11 +60,10 @@
             width: 203px;
             }
         }
-        &__navigation {
+        &__nav {
             display: flex;
             flex-direction: column;
             height: 100%;
-
             @media(min-width: $breakpoint-tablet) {
                 flex-direction: row;
                 width: 100%;
@@ -75,7 +71,7 @@
                 max-width: 370px;
                 justify-content: space-between;
             }
-            a {
+            &__link {
                 text-decoration: none;
                 font-size: 14px;
                 line-height: 14px;
@@ -104,7 +100,6 @@
             flex-direction: row;
             justify-content: space-between;
             max-width: $max-width-tablet;
-
         }
         @media(min-width: $breakpoint-desktop) {
             max-width: $max-width-desktop;
@@ -113,51 +108,53 @@
             @media(min-width: $breakpoint-tablet) {
                 display: flex;
             }
-            &--address:not(:first-child) {
-                margin-top: 40px;
-            }
-            &--address {
-                @media(min-width: $breakpoint-tablet) {
-                    margin-top: 0px !important;
-                    text-align: left;
+            &__address {
+                &__container {
+                    color: #8e8d8e;
+                    text-align: center;
                     &:not(:first-child) {
-                        margin-left: 56px;
-                        p {
-                            font-weight: 700;
+                        margin-top: 40px;
+                    }
+                    @media(min-width: $breakpoint-tablet) {
+                        margin-top: 0px !important;
+                        text-align: left;
+                        &:not(:first-child) {
+                            margin-left: 56px;
+                        }
+                    }
+                    @media(min-width: $breakpoint-desktop) {
+                        &:not(:first-child) {
+                            margin-left: 205px;
                         }
                     }
                 }
-                @media(min-width: $breakpoint-desktop) {
-                    &:not(:first-child) {
-                        margin-left: 205px;
-                    }
-                }
-                color: #8e8d8e;
-                text-align: center;
-                h4 {
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 700;
+                @media(min-width: $breakpoint-tablet) {
                     font-weight: 700;
-                    font-size: 16px;
-                    line-height: 26px;
                 }
-                p {
-                    font-weight: 400;
+                &__title {
+                    font-weight: 700;
                     font-size: 16px;
                     line-height: 26px;
                 }
             }
         }
-        &__logos {
-            margin-top: 40px;
-            &--logo:not(:first-child) {
-                margin-left: 16px;
+        &__logo {
+            &__container {
+                margin-top: 40px;
             }
-            &--logo:hover {
+            &:hover {
                 cursor: pointer;
                 path {
                     fill: $brand-secondary-light-peach;
                 }
             }
-           
+            &:not(:first-child) {
+                margin-left: 16px;
+            }
         }
     }
 }
