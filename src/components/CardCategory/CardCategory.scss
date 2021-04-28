@@ -8,27 +8,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 16px;
-    &--title {
-        font-weight: 500;
-        font-size: 28px;
-        line-height: 36px;
-        letter-spacing: 1.4px;
-        color: $brand-primary-white;
-        margin-bottom: 22px;
-        @media(min-width: $breakpoint-tablet) {
-            font-size: 40px;
-            line-height: 48px;
-            letter-spacing: 2px;
+    &:hover {
+        cursor: pointer;
+        .cardcategory__content {
+         background: rgba(231, 129, 107, .8)
         }
     }
-    &--subtitle {
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        color: $brand-primary-white;
-        
+    @media(min-width: $breakpoint-tablet) {
+        max-height: 200px;
     }
     &__content {
         display: flex;
@@ -41,14 +28,27 @@
             padding-left: 22px;
         }
     }
-    &:hover {
-        cursor: pointer;
-        .cardcategory__content {
-         background: rgba(231, 129, 107, .8)
+    &__title {
+        font-weight: 500;
+        font-size: 28px;
+        line-height: 36px;
+        letter-spacing: 1.4px;
+        color: $brand-primary-white;
+        margin-bottom: 22px;
+        @media(min-width: $breakpoint-tablet) {
+            font-size: 40px;
+            line-height: 48px;
+            letter-spacing: 2px;
         }
     }
-    @media(min-width: $breakpoint-tablet) {
-        max-height: 200px;
+    &__subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        color: $brand-primary-white;
+        
     }
     &.web {
         background-image: url('../../assets/home/mobile/image-web-design.jpg');
