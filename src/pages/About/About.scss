@@ -48,7 +48,6 @@
         width: 100%;
         margin-top: 0 !important;
         @media(min-width: $breakpoint-tablet)  {
-
             max-width: 689px;
             width: 689px;
             max-height: 735px;
@@ -102,7 +101,7 @@
                 border-bottom-right-radius: 0px;
                 background-position: 50% 50%;
             }
-            &--title {
+            &__title {
                 font-size: 32px;
                 line-height: 36px;
                 text-align: center;
@@ -119,7 +118,7 @@
                     margin-top: 0px;
                 }
             }
-            &--text {
+            &__text {
                 font-size: 15px;
                 line-height: 25px;
                 text-align: center;
@@ -209,7 +208,7 @@
     @media(min-width: $breakpoint-desktop) {
         margin-top: 160px !important;
 
-        .img {
+        .img--talent {
             border-top-left-radius: 15px;
             border-top-right-radius: 0px;
             border-bottom-right-radius: 0px;
@@ -239,14 +238,14 @@
     @media(min-width: $breakpoint-desktop) {
         background-position: -10% 96%;
     }
-    h1 {
+    &--title {
         color: $brand-primary-white;
         @media(min-width: $breakpoint-desktop) {
             margin-top: -25px;
 
         }
     }
-    p {
+    &--text {
        color: $brand-primary-white;
     }
 }
