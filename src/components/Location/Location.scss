@@ -1,6 +1,6 @@
 @import '../../styles/variables';
 
-
+/*
 .location:nth-child(even) {
     @media(min-width: $breakpoint-desktop) {
         .location__contents {
@@ -15,9 +15,25 @@
         }
     }
 }
+*/
 .location {
     width: 100%;
     height: 714px;
+    &:nth-child(even) {
+        @media(min-width: $breakpoint-desktop) {
+            &__contents {
+                margin-left: auto;
+            }
+        }
+    }
+    &:nth-child(odd) {
+        @media(min-width: $breakpoint-desktop) {
+            &__contents {
+                margin-right: auto;
+            }
+        }
+    }
+    
     @media(min-width: $breakpoint-tablet) {
         max-width: $max-width-tablet;
     }
@@ -27,16 +43,11 @@
         max-height: 326px;
         min-height: 326px;
         column-gap: 30px;
-        @for $i from 1 through 3 {
-            @if $i % 2 != 0 {
-                &:nth-child(#{$i}) {
-                    flex-direction: row-reverse;
-                }
-            }
+        &:nth-child(odd) {
+            flex-direction: row-reverse;
         }
-       
     }
-    &--image {
+    &__image {
         width: 100%;
         height: 320px;
         background-repeat: no-repeat;
@@ -72,11 +83,9 @@
             margin-top: 0px;
             border-radius: 15px;
             width: 730px;
-           
-
         }
 
-        &--title {
+        &__title {
             font-size: 32px;
             line-height: 36px;
             color: $brand-primary-peach;
@@ -103,12 +112,12 @@
                     margin-left: 133px;
                 }
             }
-            &--subtitle {
+            &__title {
                 font-size: 15px;
                 line-height: 25px;
                 font-weight: 700;
             }
-            p {
+            &__text {
                 font-size: 15px;
                 line-height: 25px;
                 font-weight: 400;
@@ -145,7 +154,7 @@
         }
     }
 
-    &--image.CANADA {
+    &__image.CANADA {
         background-image: url('../../assets/locations/desktop/image-map-canada.png');
         @media(min-width: $breakpoint-tablet){
             background-image: url('../../assets/locations/tablet/image-map-canada.png');
@@ -154,7 +163,7 @@
             background-image: url('../../assets/locations/desktop/image-map-canada.png');
         }
     }
-    &--image.AUSTRALIA {
+    &__image.AUSTRALIA {
         background-image: url('../../assets/locations/desktop/image-map-australia.png');
         @media(min-width: $breakpoint-tablet){
             background-image: url('../../assets/locations/tablet/image-map-australia.png');
@@ -163,7 +172,7 @@
             background-image: url('../../assets/locations/desktop/image-map-australia.png');
         }
     }
-    &--image.UK {
+    &__image.UK {
         background-image: url('../../assets/locations/desktop/image-map-united-kingdom.png');
         @media(min-width: $breakpoint-tablet){
             background-image: url('../../assets/locations/tablet/image-map-uk.png');
