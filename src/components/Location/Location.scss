@@ -3,6 +3,12 @@
 .location {
     width: 100%;
     height: 714px;
+    &:not(:first-child) {
+        margin-top: 59px;
+        @media(min-width: $breakpoint-desktop) {
+            margin-top: 33px;
+        }
+    }
     &:nth-child(even) {
         @media(min-width: $breakpoint-desktop) {
             &__contents {
