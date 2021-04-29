@@ -19,6 +19,9 @@
      &__contact {
          max-height: 626px;
          margin-top: 0px !important;
+         .footer__top {
+            padding-top: 64px;
+         }
          @media(min-width: $breakpoint-tablet) {
              max-height: 337px;
          }
@@ -28,6 +31,7 @@
         }
      }
     &__top {
+        padding-bottom: 44px;
         padding-top: 257px;
         display: flex;
         flex-direction: column;
@@ -35,7 +39,6 @@
         width: 100%;
         @media(min-width: $breakpoint-tablet) {
             padding-top: 167px;
-            padding-bottom: 44px;
             flex-direction: row;
             border-bottom: 1px solid rgba(151, 151, 151, .1);
             max-width: $max-width-tablet;
