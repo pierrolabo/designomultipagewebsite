@@ -107,8 +107,9 @@
         //  Show success message in place of submit button
         &__success {
             color: $brand-primary-white;
-            font-weight: 700;
+            font-weight: 500;
             padding: 54px;
+            letter-spacing: 5px;
             animation: fadeIn 3s;
         }
         @keyframes fadeIn {

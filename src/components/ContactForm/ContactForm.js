@@ -47,7 +47,7 @@ export default function ContactForm() {
               <label className="contactform__form__label contactform__form__label--border" htmlFor="message"><textarea id="email" className="contactform__form__field contactform__form__field__textarea" cols="30" row="2" placeholder="Your Message" {...formik.getFieldProps('message')}></textarea>{formik.touched.message && formik.errors.message ? (<span className="contactform__form__field--error">{formik.errors.message}</span>) : null}</label>
               </div>
               {
-                  success !== true ? (<button className="contactform__form__button" type="submit">Submit</button>) : <h3 className="contactform__form--success">Success !!</h3>
+                  success !== true ? (<button className="contactform__form__button" type="submit">Submit</button>) : <h3 className="contactform__form__success">Success !!</h3>
               }
               
           </form>
