@@ -11,14 +11,14 @@
     }
     &:nth-child(even) {
         @media(min-width: $breakpoint-desktop) {
-            &__contents {
+            .location__contents {
                 margin-left: auto;
             }
         }
     }
     &:nth-child(odd) {
         @media(min-width: $breakpoint-desktop) {
-            &__contents {
+            .location__contents {
                 margin-right: auto;
             }
         }
