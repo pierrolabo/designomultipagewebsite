@@ -168,6 +168,7 @@
 
         }
         &__field {
+            font-family: "Jost", sans-serif;
             font-size: 15px;
             line-height: 26px;
             font-weight: 500;
@@ -221,4 +222,14 @@
             
         }
 }
+}
+
+/* 
+    Change the default autocomplete behaviour
+*/
+:-webkit-autofill,
+:-webkit-autofill:hover, 
+:-webkit-autofill:focus {
+  -webkit-text-fill-color: $brand-primary-white;
+  -webkit-box-shadow: 0 0 0px 1000px $color-bg-card inset;
 }

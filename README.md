@@ -26,6 +26,16 @@ I also used and discovered formik to handle Forms.
 
 3. The behavior of some svg elements between screen resolutions, this obviously couln't be predicted by the figma design, so i had make it look nice.
 
+4. The autocomplete behaviour broke the design with ugly input style.
+   I used this trick to override this behaviour
+```
+   :-webkit-autofill,
+   :-webkit-autofill:hover, 
+   :-webkit-autofill:focus {
+   -webkit-text-fill-color: $brand-primary-white;
+   -webkit-box-shadow: 0 0 0px 1000px $color-bg-card inset;
+}
+```
 
 ##  Stack used
 
