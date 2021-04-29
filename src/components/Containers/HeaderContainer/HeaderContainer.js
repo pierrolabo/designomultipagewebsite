@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import {Link, useHistory} from "react-router-dom";
 import {motion} from "framer-motion";
 
@@ -7,31 +7,35 @@ import LogoMenuActive from '../../../assets/shared/mobile/icon-close.svg'
 import LogoMenu from '../../../assets/shared/mobile/icon-hamburger.svg'
 
 import './HeaderContainer.scss';
-// eslint-disable-next-line no-undef
-const menuElm = document.getElementById('menu-root');
 
 export default function HeaderContainer() {
     const [isActive, setActive] = useState(false)
     const history = useHistory();
-
-    // eslint-disable-next-line
+    
     const handleClick = (e) => {
         const target = e.target.id
         switch(target) {
             case "ABOUT":
                 history.push("/about")
                 break;
-                case "LOCATIONS":
+            case "LOCATIONS":
                 history.push("/locations")
                 break;
-                case "CONTACT":
+            case "CONTACT":
                 history.push("/contact")
                 break;
             default:
                 return null;    
         }
         setActive(!isActive)
-
+        return true;
+    }
+    //  User can close modal by clicking outside of the menu (overlay)
+    const handleEscape = (event) => {
+        event.stopPropagation()
+       if(event.target.id === "header__sidemenu") {
+           setActive(!isActive)
+       }
     }
     function HeaderMenu()  {
            return (
@@ -43,28 +47,13 @@ export default function HeaderContainer() {
             </nav>
             </motion.div>
            )
-
     }
-    const handleEscape = (event) => {
-       if(event.target.id === "header__sidemenu") {
-           setActive(!isActive)
-       }
-    }
-    useEffect(() => {
-        if(isActive && menuElm) menuElm.addEventListener('click', handleEscape, false)
-        if(isActive && menuElm) menuElm.addEventListener('touchstart', handleEscape, false)
-        return () => {
-            if(menuElm) {
-                menuElm.removeEventListener('click', handleEscape, false)
-                menuElm.removeEventListener('touchstart', handleEscape, false)
-            }
-        }
-    }, [handleEscape, isActive])
+   
     return (
         <>
         <div className="header__container">
             <div className="header">
-                    <Link to="/" className="header__logo">
+                    <Link to="/" style={isActive ? {pointerEvents: "none"} : null} className="header__logo">
                         <img src={Logo} alt="company logo"/>
                     </Link>
                     <nav className="header__navigation hide-on-mobile">
@@ -77,7 +66,7 @@ export default function HeaderContainer() {
                 </div>
             </div>
         </div>
-        <div id="menu-root">
+        <div id="menu-root" onClick={handleEscape} onKeyPress={handleEscape} role="button" tabIndex={0}>
         {
             isActive ?  <HeaderMenu/> : null
         }
