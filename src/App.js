@@ -4,7 +4,6 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import {Helmet} from "react-helmet";
 import UseScrollToTop from './hooks/UseScrollToTop';
 
 import Home from './pages/Home/Home';
@@ -24,12 +23,6 @@ import './styles/main.scss';
 function App() {
   return (
     <div className="App">
-      <Helmet>
-        <title>Designo Agency</title>
-        <meta property='og:title' content='Designo Agency'/>
-        <meta data-react-helmet="true" property='og:image' content='https://raw.githubusercontent.com/pierrolabo/designomultipagewebsite/develop/preview.jpg'/>
-        <meta property='og:description' content='A multi-page website built for a fake design agency'/>
-      </Helmet>
      <Router>
      <UseScrollToTop/>
      <HeaderContainer/>
