@@ -27,7 +27,7 @@ function App() {
       <Helmet>
         <title>Designo Agency</title>
         <meta property='og:title' content='Designo Agency'/>
-        <meta property='og:image' content='https://github.com/pierrolabo/designomultipagewebsite/blob/develop/preview.jpg'/>
+        <meta data-react-helmet="true" property='og:image' content='https://raw.githubusercontent.com/pierrolabo/designomultipagewebsite/develop/preview.jpg'/>
         <meta property='og:description' content='A multi-page website built for a fake design agency'/>
       </Helmet>
      <Router>
